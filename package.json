@@ -1,0 +1,29 @@
+{
+  "name": "cellular-automata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "webpack-dev-server --progress --colors",
+    "postinstall": "./node_modules/.bin/webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hnguyen1179/cellular-automata.git"
+  },
+  "author": "dukenguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hnguyen1179/cellular-automata/issues"
+  },
+  "homepage": "https://github.com/hnguyen1179/cellular-automata#readme",
+  "dependencies": {
+    "d3": "^5.15.0",
+    "webpack": "^4.41.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}
