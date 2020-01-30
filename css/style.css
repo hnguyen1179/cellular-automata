@@ -1,3 +1,48 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Actual Styling Below */
 body { 
     width: 80%;
     min-width: 420px;
@@ -7,18 +52,27 @@ body {
 a { color: rgba(0, 0, 0, 0.678); text-decoration: none; }
 
 .links {
+    position: sticky;
+    top: 0px;
+    height: 30px;
     display: flex;
     font-family: 'PT Sans', sans-serif;
     max-width: 825px;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-bottom: 90px;
     padding-right: 10px;
+    background-color: rgba(255, 255, 255, 0.955);
+    display: flex;
+    align-items: center;
+    z-index: 9001;
 }
 
 .links > div {
     display: flex;
     align-items: center;
     margin-left: auto;
+    font-weight: 700;
 }
 
 .links-button {
@@ -27,7 +81,7 @@ a { color: rgba(0, 0, 0, 0.678); text-decoration: none; }
 }
 
 .github:hover {
-    color: rgba(0, 0, 0, 0.397);
+    color: rgb(0, 0, 0);
     transition: 200ms;
 }
 
@@ -42,13 +96,13 @@ a { color: rgba(0, 0, 0, 0.678); text-decoration: none; }
 
 .navbar {
     position: sticky;
-    top: 16px;
+    top: 53px;
     height: 100vh;
     min-width: 70px;
     margin: 10px;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 113px;
+    margin-top: 96px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -72,10 +126,8 @@ a { color: rgba(0, 0, 0, 0.678); text-decoration: none; }
 }
 
 .right {
-    /* margin: 10px; */
     max-width: 600px;
     width: 100%;
-    padding-right: 10px;
 }
 
 .header {
@@ -86,11 +138,13 @@ a { color: rgba(0, 0, 0, 0.678); text-decoration: none; }
 
 .header-title {
     font-size: 40px;
+    font-weight: 700;
 }
 
 .header-subtext {
     color: rgba(0, 0, 0, 0.308);
     font-size: 20px;
+    padding-left: 5px;
 }
 
 .content { 
@@ -100,11 +154,40 @@ a { color: rgba(0, 0, 0, 0.678); text-decoration: none; }
 }
 
 .meat {
+    position: relative;
     height: 2400px;
 }
 
-.meat > div {
-    padding-top: 25px;
+.meat > .meat-paragraph:first-child {
+    padding-top: 24px;
+    padding-bottom: 30px;
+}
+
+.meat > .meat-paragraph:not(:first-child) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.meat > .meat-paragraph { 
     margin: 20px 0px;
-    height: 600px;
+    height: fit-content;
+    line-height: 22px;
+}
+
+#glider-gun {
+    position: absolute;
+    transform: translate(96px, 0px);
+    z-index: -1;
+}
+
+.glider-gun-spacing {
+    height: 175px;
+}
+
+.glider-gun-spacing:hover {
+    cursor: pointer;
+}
+
+#section2 {
+    background-color: rgba(255, 255, 255, 0.952);
 }
