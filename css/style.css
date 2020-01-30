@@ -47,6 +47,7 @@ body {
     width: 80%;
     min-width: 420px;
     margin: 0 auto;
+    -webkit-user-select: none;
 }
 
 a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
@@ -190,8 +191,8 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 .glider-gun-spacing {
     height: 175px;
     width: 110%;
-    background-color: rgba(0, 0, 0, 0.015);
-    transform: translate(-28px, -20px);
+    background-color: rgba(0, 0, 0, 0.01);
+    transform: translate(-28px, -10px);
     transition: 1000ms;
     z-index: -1;
 }
@@ -203,6 +204,55 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     transition: 300ms;
 }
 
-#section2 {
+.broken-glider-gun-title {
+    transform: translate(30px, 25px);
+    font-size: 15px;
+    z-index: 3;
+    color: rgba(0, 0, 0, 0.507);
+}
+
+.broken-glider-gun-restart {
+    position: absolute;
+    transform: translate(-27px, 3px);
+    width: 20px;
+    height: 175px;
+    background-color: rgba(0, 0, 0, 0.096);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 5;
+}
+
+.broken-glider-gun-restart:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+#broken-glider-gun {
+    position: absolute;
+    transform: translate(-210px, -252px);
+    z-index: -1;
+}
+
+#broken-glider-gun:hover {
+    z-index: 9000;
+}
+
+.broken-glider-gun-spacing {
+    height: 175px;
+    width: 110%;
+    background-color: rgba(0, 0, 0, 0.01);
+    transform: translate(-28px, 3px);
+    transition: 1000ms;
+    z-index: -1;
+}
+
+.broken-glider-gun-spacing:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.035);
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.meat-paragraph {
     background-color: rgba(255, 255, 255, 0.852);
 }
