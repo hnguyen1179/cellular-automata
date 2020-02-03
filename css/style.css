@@ -58,7 +58,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     height: 30px;
     display: flex;
     font-family: 'PT Sans', sans-serif;
-    max-width: 825px;
+    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 90px;
@@ -144,9 +144,9 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 }
 
 .header-subtext {
-    color: rgba(0, 0, 0, 0.308);
+    color: rgba(0, 0, 0, 0.508);
     font-size: 20px;
-    padding-left: 5px;
+    padding-left: 2px;
 }
 
 .content { 
@@ -157,7 +157,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 .meat {
     position: relative;
-    height: 2400px;
+    height: 3000px;
 }
 
 .meat > .meat-paragraph:first-child {
@@ -175,8 +175,13 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     line-height: 22px;
 }
 
+.meat-paragraph {
+    background-color: rgba(255, 255, 255, 0.852);
+}
+
 .glider-gun-title {
-    transform: translate(30px, 17px);
+    text-align: center;
+    transform: translate(0px, 150px);
     font-size: 15px;
     z-index: 3;
     color: rgba(0, 0, 0, 0.507);
@@ -199,7 +204,8 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 }
 
 .broken-glider-gun-title {
-    transform: translate(30px, 25px);
+    text-align: center;
+    transform: translate(0px, 150px);
     font-size: 15px;
     z-index: 3;
     color: rgba(0, 0, 0, 0.507);
@@ -239,6 +245,25 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     z-index: 2;
 }
 
-.meat-paragraph {
-    background-color: rgba(255, 255, 255, 0.852);
+#one-dimensional-ca { 
+    position: absolute; 
+    transform: translate(-23px, 45px);
+}
+
+.one-dimensional-ca-spacing {
+    margin-top: 20px;
+    height: 400px;
+    width: 111%;
+    background-color: rgba(0, 0, 0, 0.02);
+    transform: translate(-28px, 3px);
+    border-radius: 10px;
+    z-index: 2;
+} 
+
+.one-dimensional-ca-title {
+    text-align: center;
+    transform: translate(0px, 375px);
+    font-size: 15px;
+    z-index: 3;
+    color: rgba(0, 0, 0, 0.507);
 }
