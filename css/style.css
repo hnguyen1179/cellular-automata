@@ -58,7 +58,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     height: 30px;
     display: flex;
     font-family: 'PT Sans', sans-serif;
-    width: 100%;
+    width: 100vw;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 90px;
@@ -73,6 +73,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     display: flex;
     align-items: center;
     margin-left: auto;
+    margin-right: 20%;
     font-weight: 700;
 }
 
@@ -107,7 +108,6 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .navbar > a {
@@ -180,8 +180,9 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 }
 
 .glider-gun-title {
-    text-align: center;
-    transform: translate(0px, 150px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
     font-size: 15px;
     z-index: 3;
     color: rgba(0, 0, 0, 0.507);
@@ -189,23 +190,25 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 #glider-gun {
     position: absolute;
-    transform: translate(90px, 8px);
+    transform: translate(149px, 33px);
     z-index: 1;
     pointer-events: none;
 }
 
 .glider-gun-spacing {
+    margin-top: 10px;
     height: 175px;
     width: 110%;
     background-color: rgba(0, 0, 0, 0.02);
-    transform: translate(-28px, -10px);
+    /* transform: translate(-28px, -10px); */
     border-radius: 10px;
     z-index: 2;
 }
 
 .broken-glider-gun-title {
-    text-align: center;
-    transform: translate(0px, 150px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
     font-size: 15px;
     z-index: 3;
     color: rgba(0, 0, 0, 0.507);
@@ -213,7 +216,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 .broken-glider-gun-restart {
     position: absolute;
-    transform: translate(-27px, 3px);
+    transform: translate(0px, 10px);
     width: 20px;
     height: 175px;
     background-color: rgba(0, 0, 0, 0.05);
@@ -231,23 +234,25 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 #broken-glider-gun {
     position: absolute;
-    transform: translate(-261px, -381px);
+    transform: translate(-201px, -368px);
     z-index: 1;
     pointer-events: none;
 }
 
 .broken-glider-gun-spacing {
+    margin-top: 10px;
     height: 175px;
     width: 110%;
     background-color: rgba(0, 0, 0, 0.02);
-    transform: translate(-28px, 3px);
+    /* transform: translate(-28px, 3px); */
     border-radius: 10px;
     z-index: 2;
 }
 
 #one-dimensional-ca { 
     position: absolute; 
-    transform: translate(-23px, 45px);
+    transform: translate(5px, 45px);
+    z-index: -1;
 }
 
 .one-dimensional-ca-spacing {
@@ -255,27 +260,79 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     height: 400px;
     width: 111%;
     background-color: rgba(0, 0, 0, 0.02);
-    transform: translate(-28px, 3px);
+    /* transform: translate(-28px, 3px);  */
     border-radius: 10px;
     z-index: 2;
 } 
 
 .one-dimensional-ca-title {
-    text-align: center;
-    transform: translate(0px, 359px);
-    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 13px;
     z-index: 3;
     color: rgba(0, 0, 0, 0.507);
 }
 
-#forest-fire { 
-    transform: translate(-3%, 8px);
+#one-dimensional-ca-random { 
+    position: absolute; 
+    transform: translate(5px, 45px);
+    z-index: -1;
+}
+
+.one-dimensional-ca-random-spacing {
+    margin-top: 20px;
+    height: 400px;
+    width: 111%;
+    background-color: rgba(0, 0, 0, 0.02);
+    /* transform: translate(-28px, 3px);  */
+    border-radius: 10px;
+    z-index: 2;
+} 
+
+.one-dimensional-ca-random-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 13px;
+    z-index: 3;
+    color: rgba(0, 0, 0, 0.507);
 }
 
 .forest-fire-title {
-    text-align: center;
-    transform: translate(-4px, 10px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
     font-size: 15px;
     z-index: 3;
     color: rgba(0, 0, 0, 0.507); 
+}
+
+.forest-fire-spacing {
+    display: inline-block;
+    height: 300px;
+    border: 5px solid rgb(65, 65, 65);
+}
+
+.forest-fire-spacing:hover {
+    cursor: pointer;
+}
+
+.forest-fire-v2-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 15px;
+    z-index: 3;
+    color: rgba(0, 0, 0, 0.507); 
+}
+
+.forest-fire-v2-spacing {
+    display: inline-block;
+    height: 300px;
+    border: 5px solid rgb(65, 65, 65);
+}
+
+.forest-fire-v2-spacing:hover {
+    cursor: pointer;
 }
