@@ -44,8 +44,7 @@ table {
 
 /* Actual Styling Below */
 body { 
-    width: 80%;
-    min-width: 420px;
+    width: 100vw;
     margin: 0 auto;
     -webkit-user-select: none;
 }
@@ -58,22 +57,22 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     height: 30px;
     display: flex;
     font-family: 'PT Sans', sans-serif;
-    width: 100vw;
+    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 90px;
-    padding-right: 10px;
-    background-color: rgba(255, 255, 255, 0.904);
+    background-color: rgba(255, 255, 255, 0.975);
     display: flex;
     align-items: center;
-    z-index: 1;
+    z-index: 500;
+    box-sizing: content-box;
 }
 
 .links > div {
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-right: 20%;
+    margin-right: 20px;
     font-weight: 700;
 }
 
@@ -99,15 +98,15 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 .navbar {
     position: sticky;
     top: 43px;
-    height: 100vh;
+    height: 100%;
     min-width: 70px;
     margin: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
     margin-top: 79px;
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin-left: 15%;
+    margin-right: 30px;
 }
 
 .navbar > a {
@@ -130,10 +129,10 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 .right {
     max-width: 600px;
     width: 100%;
+    margin-right: auto;
 }
 
 .header {
-    /* font-family: 'Allerta Stencil', sans-serif; */
     font-family: 'PT Sans', sans-serif;
     letter-spacing: 1px;
 }
@@ -151,13 +150,14 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 .content { 
     display: flex;
-    width: 100%;
-    height: 100%;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .meat {
     position: relative;
-    height: 3000px;
+    height: 100%;
 }
 
 .meat > .meat-paragraph:first-child {
@@ -200,7 +200,6 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     height: 175px;
     width: 110%;
     background-color: rgba(0, 0, 0, 0.02);
-    /* transform: translate(-28px, -10px); */
     border-radius: 10px;
     z-index: 2;
 }
@@ -251,13 +250,13 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 #one-dimensional-ca { 
     position: absolute; 
-    transform: translate(5px, 45px);
+    transform: translate(5px, 40px);
     z-index: -1;
 }
 
 .one-dimensional-ca-spacing {
     margin-top: 20px;
-    height: 400px;
+    height: 370px;
     width: 111%;
     background-color: rgba(0, 0, 0, 0.02);
     /* transform: translate(-28px, 3px);  */
@@ -276,13 +275,13 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 #one-dimensional-ca-random { 
     position: absolute; 
-    transform: translate(5px, 45px);
+    transform: translate(5px, 36px);
     z-index: -1;
 }
 
 .one-dimensional-ca-random-spacing {
     margin-top: 20px;
-    height: 400px;
+    height: 359px;
     width: 111%;
     background-color: rgba(0, 0, 0, 0.02);
     /* transform: translate(-28px, 3px);  */
@@ -299,6 +298,31 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     color: rgba(0, 0, 0, 0.507);
 }
 
+#traffic-model { 
+    position: absolute; 
+    transform: translate(5px, 36px);
+    z-index: -1;
+}
+
+.traffic-model-spacing {
+    margin-top: 20px;
+    height: 359px;
+    width: 111%;
+    background-color: rgba(0, 0, 0, 0.02);
+    /* transform: translate(-28px, 3px);  */
+    border-radius: 10px;
+    z-index: 2;
+} 
+
+.traffic-model-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 13px;
+    z-index: 3;
+    color: rgba(0, 0, 0, 0.507);
+}
+
 .forest-fire-title {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -306,6 +330,10 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     font-size: 15px;
     z-index: 3;
     color: rgba(0, 0, 0, 0.507); 
+}
+
+#forest-fire {
+    z-index: 9001;
 }
 
 .forest-fire-spacing {
@@ -327,7 +355,12 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     color: rgba(0, 0, 0, 0.507); 
 }
 
+#forest-fire-v2 {
+    z-index: 9001;
+}
+
 .forest-fire-v2-spacing {
+    z-index: 9001;
     display: inline-block;
     height: 300px;
     border: 5px solid rgb(65, 65, 65);
