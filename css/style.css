@@ -44,8 +44,7 @@ table {
 
 /* Actual Styling Below */
 body { 
-    width: 80%;
-    min-width: 420px;
+    width: 100vw;
     margin: 0 auto;
     -webkit-user-select: none;
 }
@@ -62,17 +61,18 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 90px;
-    padding-right: 10px;
-    background-color: rgba(255, 255, 255, 0.904);
+    background-color: rgba(255, 255, 255, 0.975);
     display: flex;
     align-items: center;
-    z-index: 1;
+    z-index: 500;
+    box-sizing: content-box;
 }
 
 .links > div {
     display: flex;
     align-items: center;
     margin-left: auto;
+    margin-right: 20px;
     font-weight: 700;
 }
 
@@ -98,16 +98,15 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 .navbar {
     position: sticky;
     top: 43px;
-    height: 100vh;
+    height: 100%;
     min-width: 70px;
     margin: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
     margin-top: 79px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 15%;
+    margin-right: 30px;
 }
 
 .navbar > a {
@@ -130,10 +129,10 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 .right {
     max-width: 600px;
     width: 100%;
+    margin-right: auto;
 }
 
 .header {
-    /* font-family: 'Allerta Stencil', sans-serif; */
     font-family: 'PT Sans', sans-serif;
     letter-spacing: 1px;
 }
@@ -151,13 +150,14 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 .content { 
     display: flex;
-    width: 100%;
-    height: 100%;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .meat {
     position: relative;
-    height: 3000px;
+    height: 100%;
 }
 
 .meat > .meat-paragraph:first-child {
@@ -180,8 +180,9 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 }
 
 .glider-gun-title {
-    text-align: center;
-    transform: translate(0px, 150px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
     font-size: 15px;
     z-index: 3;
     color: rgba(0, 0, 0, 0.507);
@@ -189,23 +190,24 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 #glider-gun {
     position: absolute;
-    transform: translate(90px, 8px);
+    transform: translate(149px, 33px);
     z-index: 1;
     pointer-events: none;
 }
 
 .glider-gun-spacing {
+    margin-top: 10px;
     height: 175px;
     width: 110%;
     background-color: rgba(0, 0, 0, 0.02);
-    transform: translate(-28px, -10px);
     border-radius: 10px;
     z-index: 2;
 }
 
 .broken-glider-gun-title {
-    text-align: center;
-    transform: translate(0px, 150px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
     font-size: 15px;
     z-index: 3;
     color: rgba(0, 0, 0, 0.507);
@@ -213,7 +215,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 .broken-glider-gun-restart {
     position: absolute;
-    transform: translate(-27px, 3px);
+    transform: translate(0px, 10px);
     width: 20px;
     height: 175px;
     background-color: rgba(0, 0, 0, 0.05);
@@ -231,51 +233,139 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 #broken-glider-gun {
     position: absolute;
-    transform: translate(-261px, -381px);
+    transform: translate(-201px, -368px);
     z-index: 1;
     pointer-events: none;
 }
 
 .broken-glider-gun-spacing {
+    margin-top: 10px;
     height: 175px;
     width: 110%;
     background-color: rgba(0, 0, 0, 0.02);
-    transform: translate(-28px, 3px);
+    /* transform: translate(-28px, 3px); */
     border-radius: 10px;
     z-index: 2;
 }
 
 #one-dimensional-ca { 
     position: absolute; 
-    transform: translate(-23px, 45px);
+    transform: translate(5px, 40px);
+    z-index: -1;
 }
 
 .one-dimensional-ca-spacing {
     margin-top: 20px;
-    height: 400px;
+    height: 370px;
     width: 111%;
     background-color: rgba(0, 0, 0, 0.02);
-    transform: translate(-28px, 3px);
+    /* transform: translate(-28px, 3px);  */
     border-radius: 10px;
     z-index: 2;
 } 
 
 .one-dimensional-ca-title {
-    text-align: center;
-    transform: translate(0px, 359px);
-    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 13px;
     z-index: 3;
     color: rgba(0, 0, 0, 0.507);
 }
 
-#forest-fire { 
-    transform: translate(-3%, 8px);
+#one-dimensional-ca-random { 
+    position: absolute; 
+    transform: translate(5px, 36px);
+    z-index: -1;
+}
+
+.one-dimensional-ca-random-spacing {
+    margin-top: 20px;
+    height: 359px;
+    width: 111%;
+    background-color: rgba(0, 0, 0, 0.02);
+    /* transform: translate(-28px, 3px);  */
+    border-radius: 10px;
+    z-index: 2;
+} 
+
+.one-dimensional-ca-random-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 13px;
+    z-index: 3;
+    color: rgba(0, 0, 0, 0.507);
+}
+
+#traffic-model { 
+    position: absolute; 
+    transform: translate(5px, 36px);
+    z-index: -1;
+}
+
+.traffic-model-spacing {
+    margin-top: 20px;
+    height: 359px;
+    width: 111%;
+    background-color: rgba(0, 0, 0, 0.02);
+    /* transform: translate(-28px, 3px);  */
+    border-radius: 10px;
+    z-index: 2;
+} 
+
+.traffic-model-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 13px;
+    z-index: 3;
+    color: rgba(0, 0, 0, 0.507);
 }
 
 .forest-fire-title {
-    text-align: center;
-    transform: translate(-4px, 10px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
     font-size: 15px;
     z-index: 3;
     color: rgba(0, 0, 0, 0.507); 
+}
+
+#forest-fire {
+    z-index: 9001;
+}
+
+.forest-fire-spacing {
+    display: inline-block;
+    height: 300px;
+    border: 5px solid rgb(65, 65, 65);
+}
+
+.forest-fire-spacing:hover {
+    cursor: pointer;
+}
+
+.forest-fire-v2-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 15px;
+    z-index: 3;
+    color: rgba(0, 0, 0, 0.507); 
+}
+
+#forest-fire-v2 {
+    z-index: 9001;
+}
+
+.forest-fire-v2-spacing {
+    z-index: 9001;
+    display: inline-block;
+    height: 300px;
+    border: 5px solid rgb(65, 65, 65);
+}
+
+.forest-fire-v2-spacing:hover {
+    cursor: pointer;
 }

@@ -39,13 +39,16 @@
         <script src="./lib/glider-gun.js" charset="utf-8"></script>
         <script src="./lib/broken-glider-gun.js" charset="utf-8"></script>
         <script src='./lib/1d-ca.js' charset='utf-8'></script>
+        <script src='./lib/1d-ca-random.js' charset='utf-8'></script>
         <script src="./lib/forest-fire.js" charset='utf-8'></script>
+        <script src="./lib/forest-fire-v2.js" charset='utf-8'></script>
+        <script src="./lib/traffic-model.js" charset='utf-8'></script>
         
         <link rel="stylesheet" href="./css/style.css">
     </head>
-    <body id="section1">\
+    <body id="section1">
         <div class="links">
-            <div>
+            <div class="links-buttons">
                 <a class="links-button github" href="https://github.com/hnguyen1179/cellular-automata">
                     <i class="fa fa-github" aria-hidden="true"></i>                    
                     &nbsp;GitHub
@@ -58,12 +61,11 @@
         </div>
 
         <div class="content">
-
             <section class="navbar">
-                <a class="navbar-link" href="#section1"> Section 1 </a>
-                <a class="navbar-link" href="#section2"> Section 2 </a>
-                <a class="navbar-link" href="#section3"> Section 3 </a>
-                <a class="navbar-link" href="#section4"> Section 4 </a>
+                <a class="navbar-link" href="#section1"> What is it? </a>
+                <a class="navbar-link" href="#section2"> 1-Dimensional </a>
+                <a class="navbar-link" href="#section3"> 2-Dimensional </a>
+                <a class="navbar-link" href="#section4"> Forest Fires </a>
             </section>
 
             <section class="right" id="section1">
@@ -78,9 +80,8 @@
                     </div>
 
                     <svg id="one-dimensional-ca"></svg>
-                    <div class="one-dimensional-ca-spacing">
-                        <div class="one-dimensional-ca-title">1-d cellular automaton </div>
-                    </div>
+                    <div class="one-dimensional-ca-spacing"></div>
+                    <div class="one-dimensional-ca-title">1-d cellular automaton, </div>
 
                     <div class="meat-paragraph">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -93,10 +94,41 @@
                         posuere ac ut consequat semper. Erat pellentesque adipiscing commodo elit at imperdiet.
                     </div>
 
-                    <svg id="glider-gun"></svg>
-                    <div class="glider-gun-spacing">
-                        <div class="glider-gun-title">glider gun</div>
+                    <svg id="one-dimensional-ca-random"></svg>
+                    <div class="one-dimensional-ca-random-spacing"></div>
+                    <div class="one-dimensional-ca-random-title">1-d cellular automaton, </div>
+
+                    <div class="meat-paragraph">
+                        Risus ultricies tristique nulla aliquet enim. Ac tortor dignissim convallis aenean et tortor at risus viverra. Nulla
+                        malesuada pellentesque elit eget gravida. Urna et pharetra pharetra massa massa ultricies. Cursus metus aliquam eleifend
+                        mi in nulla posuere sollicitudin aliquam. Sit amet consectetur adipiscing elit ut aliquam purus sit. Pretium nibh ipsum
+                        consequat nisl vel pretium lectus. Cras adipiscing enim eu turpis egestas. Parturient montes nascetur ridiculus mus
+                        mauris. In tellus integer feugiat scelerisque varius morbi enim nunc. Mauris vitae ultricies leo integer malesuada nunc.
+                        Ut etiam sit amet nisl purus in mollis nunc. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Consequat
+                        semper viverra nam libero justo laoreet sit amet. Ultrices eros in cursus turpis massa tincidunt dui ut ornare. At augue
+                        eget arcu dictum varius. Id nibh tortor id aliquet lectus proin nibh nisl. Vestibulum lorem sed risus ultricies
+                        tristique nulla aliquet enim tortor. Id volutpat lacus laoreet non curabitur gravida arcu. Sit amet consectetur
+                        adipiscing elit ut aliquam purus.
                     </div>
+
+                    <svg id="traffic-model"></svg>
+                    <div class="traffic-model-spacing"></div>
+                    <div class="traffic-model-title">1-d cellular automaton, </div>
+
+                    <div class="meat-paragraph">
+                        In cursus turpis massa tincidunt dui. Sed augue lacus viverra vitae congue eu. Viverra ipsum nunc aliquet bibendum enim.
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Nisi scelerisque eu ultrices vitae. Nec
+                        tincidunt praesent semper feugiat nibh sed. Lacus vestibulum sed arcu non odio euismod lacinia at. Enim praesent
+                        elementum facilisis leo vel. Aenean euismod elementum nisi quis. Lacus laoreet non curabitur gravida. Vitae congue
+                        mauris rhoncus aenean vel elit. In mollis nunc sed id semper risus. Turpis nunc eget lorem dolor sed viverra. Consequat
+                        semper viverra nam libero. Rhoncus urna neque viverra justo nec ultrices dui sapien eget. Pharetra convallis posuere
+                        morbi leo urna molestie at. Facilisis mauris sit amet massa vitae. Ut sem viverra aliquet eget sit amet tellus cras
+                        adipiscing.
+                    </div>
+
+                    <svg id="glider-gun"></svg>
+                    <div class="glider-gun-spacing"></div>
+                    <div class="glider-gun-title">glider gun</div>
 
                     <div id="section2" class="meat-paragraph">
                         Nibh praesent tristique magna sit. Feugiat nibh sed pulvinar proin gravida hendrerit. Aliquet porttitor lacus luctus
@@ -110,9 +142,8 @@
 
                     <div class="broken-glider-gun-restart"></div>
                     <svg id="broken-glider-gun"></svg>
-                    <div class="broken-glider-gun-spacing">
-                        <div class="broken-glider-gun-title">broken glider gun</div>
-                    </div>
+                    <div class="broken-glider-gun-spacing"></div>
+                    <div class="broken-glider-gun-title">broken glider gun</div>
 
                     <div id="section3" class="meat-paragraph">
                         Mattis molestie a iaculis at erat. At auctor urna nunc id. Semper eget duis at tellus at urna condimentum mattis
@@ -125,7 +156,9 @@
                         blandit libero volutpat. Scelerisque viverra mauris in aliquam.
                     </div>
 
-                    <svg id="forest-fire"></svg>
+                    <div class="forest-fire-spacing">
+                        <svg id="forest-fire"></svg>
+                    </div>
                     <div class="forest-fire-title">forest fire</div>
 
                     <div id="section4" class="meat-paragraph">
@@ -137,6 +170,33 @@
                         accumsan sit amet nulla facilisi. Lorem donec massa sapien faucibus et molestie ac feugiat. Lorem donec massa sapien
                         faucibus et molestie ac feugiat sed.
                     </div>
+
+                    <div class="forest-fire-v2-spacing">
+                        <svg id="forest-fire-v2"></svg>
+                    </div>
+                    <div class="forest-fire-v2-title">improved forest fire</div>
+                 
+                    <div id="section4" class="meat-paragraph">
+                        Congue eu consequat ac felis donec et. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Urna cursus eget
+                        nunc scelerisque viverra mauris in. Vitae proin sagittis nisl rhoncus mattis rhoncus. Enim ut sem viverra aliquet eget.
+                        Orci nulla pellentesque dignissim enim sit amet venenatis. Egestas sed sed risus pretium quam vulputate dignissim
+                        suspendisse. Eget duis at tellus at urna condimentum mattis pellentesque. Tincidunt praesent semper feugiat nibh sed
+                        pulvinar proin. Pretium viverra suspendisse potenti nullam ac tortor vitae. Adipiscing bibendum est ultricies integer
+                        quis auctor. Mattis molestie a iaculis at erat pellentesque. Aliquet nec ullamcorper sit amet risus.
+
+                    </div>
+
+                    <div id="section4" class="meat-paragraph">
+                        Consectetur purus ut faucibus pulvinar. Dictum at tempor commodo ullamcorper a lacus vestibulum. Dapibus ultrices in
+                        iaculis nunc sed augue lacus viverra vitae. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt
+                        ornare. Odio ut sem nulla pharetra diam. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae.
+                        Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Ut morbi tincidunt augue interdum velit
+                        euismod. Dignissim suspendisse in est ante in nibh. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet.
+                        Orci eu lobortis elementum nibh tellus molestie. Tempus urna et pharetra pharetra massa massa. Id consectetur purus ut
+                        faucibus pulvinar elementum integer enim. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. Pulvinar etiam non
+                        quam lacus suspendisse faucibus interdum posuere lorem.
+                    </div>
+
                 </main>
             </section>
         </div>
