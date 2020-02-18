@@ -18,7 +18,7 @@
                         event.preventDefault();
                         let hash = this.hash;
                         $('html, body').animate({
-                            scrollTop: $(hash).offset().top-30
+                            scrollTop: $(hash).offset().top-50
                         }, 650)
                     }
                 });
@@ -48,7 +48,7 @@
         
         <link rel="stylesheet" href="./css/style.css">
     </head>
-    <body id="section1">
+    <body>
         <div class="links">
             <div class="links-buttons">
                 <a class="links-button github" href="https://github.com/hnguyen1179/cellular-automata">
@@ -67,34 +67,45 @@
                 <a class="navbar-link" href="#section1"> What is it? </a>
                 <a class="navbar-link" href="#section2"> 1-Dimensional </a>
                 <a class="navbar-link" href="#section3"> 2-Dimensional </a>
-                <a class="navbar-link" href="#section4"> Forest Fires </a>
+                <a class="navbar-link" href="#traffic-title"> Traffic </a>
+                <a class="navbar-link" href="#forest-fire-title"> Forest Fires </a>
             </section>
 
-            <section class="right" id="section1">
+            <section class="right">
                 <header class="header">
-                    <div class="header-title"> cellular automata </div>
+                    <div class="header-title"> Cellular Automata </div>
                     <div class="header-subtext"> a study on complex systems </div>
                 </header>
 
                 <main class="meat">
+                    <div class="meat-quote-bar"></div>
+                    <div class="meat-quote">
+                        But even more important is the way complex systems seem to strike a balance between the need for order and
+                        the imperative to change. Complex systems tend to locate themselves at a place we call the <span style="font-style:italic">edge of chaos</span>. We imagine
+                        the edge of chaos as a place where there is enough innovation to keep a living system vibrant, and enough stability to
+                        keep it from collapsing into anarchy.
+                    </div>
+                    <div class="meat-quote-author">
+                        Michael Crichton, <span style="font-style:italic">The Lost World</span>
+                    </div>
+
+                    <div class="meat-section-title" id="section1">
+                        what is it?
+                    </div>
+
                     <div class="meat-paragraph">
-                        Some quote about complex systems!
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Mauris nunc congue nisi vitae suscipit. Aliquet porttitor lacus luctus accumsan tortor. Libero volutpat sed
+                        cras ornare arcu dui vivamus.
+                    </div>
+
+                    <div class="meat-section-title" id="section2">
+                        1-dimensional cellular automata
                     </div>
 
                     <svg id="one-dimensional-ca"></svg>
                     <div class="one-dimensional-ca-spacing"></div>
                     <div class="one-dimensional-ca-title">1-d cellular automaton, </div>
-
-                    <div class="meat-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Mauris nunc congue nisi vitae suscipit. Aliquet porttitor lacus luctus accumsan tortor. Libero volutpat sed cras
-                        ornare arcu dui vivamus. Vitae sapien pellentesque habitant morbi tristique senectus. Hendrerit dolor magna eget est
-                        lorem ipsum dolor sit amet. Id leo in vitae turpis massa sed elementum. Duis at tellus at urna condimentum mattis
-                        pellentesque id nibh. Viverra maecenas accumsan lacus vel. At volutpat diam ut venenatis tellus in metus vulputate.
-                        Morbi tristique senectus et netus et malesuada fames ac. In dictum non consectetur a. Malesuada nunc vel risus commodo
-                        viverra maecenas accumsan lacus vel. Maecenas accumsan lacus vel facilisis volutpat est velit egestas. Accumsan tortor
-                        posuere ac ut consequat semper. Erat pellentesque adipiscing commodo elit at imperdiet.
-                    </div>
 
                     <svg id="one-dimensional-ca-random"></svg>
                     <div class="one-dimensional-ca-random-spacing"></div>
@@ -113,16 +124,6 @@
                         adipiscing elit ut aliquam purus.
                     </div>
 
-                    <svg id="traffic-model-25"></svg>
-                    <div class="traffic-model-25-spacing"></div>
-                    <svg id="traffic-model-50"></svg>
-                    <div class="traffic-model-50-spacing"></div>
-                    <svg id="traffic-model-75"></svg>
-                    <div class="traffic-model-75-spacing"></div>
-                    <div class="traffic-model-title">1-d cellular automaton, </div>
-
-
-
                     <div class="meat-paragraph">
                         In cursus turpis massa tincidunt dui. Sed augue lacus viverra vitae congue eu. Viverra ipsum nunc aliquet bibendum enim.
                         Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Nisi scelerisque eu ultrices vitae. Nec
@@ -134,11 +135,15 @@
                         adipiscing.
                     </div>
 
+                    <div class="meat-section-title" id="section3">
+                        2-dimensional cellular automata
+                    </div>
+
                     <svg id="glider-gun"></svg>
                     <div class="glider-gun-spacing"></div>
                     <div class="glider-gun-title">glider gun</div>
 
-                    <div id="section2" class="meat-paragraph">
+                    <div class="meat-paragraph">
                         Nibh praesent tristique magna sit. Feugiat nibh sed pulvinar proin gravida hendrerit. Aliquet porttitor lacus luctus
                         accumsan. Nisi porta lorem mollis aliquam. Arcu non odio euismod lacinia at quis risus sed. Ullamcorper a lacus
                         vestibulum sed arcu non odio. Nibh cras pulvinar mattis nunc. Augue mauris augue neque gravida in fermentum et
@@ -153,7 +158,7 @@
                     <div class="broken-glider-gun-spacing"></div>
                     <div class="broken-glider-gun-title">broken glider gun</div>
 
-                    <div id="section3" class="meat-paragraph">
+                    <div class="meat-paragraph">
                         Mattis molestie a iaculis at erat. At auctor urna nunc id. Semper eget duis at tellus at urna condimentum mattis
                         pellentesque. Tristique nulla aliquet enim tortor at auctor. Morbi tristique senectus et netus et. Pellentesque elit
                         ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Scelerisque eleifend donec pretium vulputate sapien
@@ -164,12 +169,39 @@
                         blandit libero volutpat. Scelerisque viverra mauris in aliquam.
                     </div>
 
+                    <div class="meat-section-title" id="traffic-title">
+                        Traffic Model
+                    </div>
+                    
+                    <svg id="traffic-model-25"></svg>
+                    <div class="traffic-model-25-spacing"></div>
+                    <div class="traffic-model-title">0.25 Crowded </div>
+                    <svg id="traffic-model-50"></svg>
+                    <div class="traffic-model-50-spacing"></div>
+                    <div class="traffic-model-title">0.50 Crowded </div>
+                    <svg id="traffic-model-75"></svg>
+                    <div class="traffic-model-75-spacing"></div>
+                    <div class="traffic-model-title">0.75 Crowded </div>
+
+                    <div class="meat-paragraph">
+                        Congue eu consequat ac felis donec et. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Urna cursus eget
+                        nunc scelerisque viverra mauris in. Vitae proin sagittis nisl rhoncus mattis rhoncus. Enim ut sem viverra aliquet eget.
+                        Orci nulla pellentesque dignissim enim sit amet venenatis. Egestas sed sed risus pretium quam vulputate dignissim
+                        suspendisse. Eget duis at tellus at urna condimentum mattis pellentesque. Tincidunt praesent semper feugiat nibh sed
+                        pulvinar proin. Pretium viverra suspendisse potenti nullam ac tortor vitae. Adipiscing bibendum est ultricies integer
+                        quis auctor. Mattis molestie a iaculis at erat pellentesque. Aliquet nec ullamcorper sit amet risus.
+                    </div>
+
+                    <div class="meat-section-title" id="forest-fire-title">
+                        Forest Fire Model
+                    </div>
+
                     <div class="forest-fire-spacing">
                         <svg id="forest-fire"></svg>
                     </div>
                     <div class="forest-fire-title">forest fire</div>
 
-                    <div id="section4" class="meat-paragraph">
+                    <div class="meat-paragraph">
                         Ornare arcu odio ut sem nulla. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Massa id neque
                         aliquam vestibulum morbi blandit cursus. Egestas dui id ornare arcu odio ut sem nulla. Nunc faucibus a pellentesque sit
                         amet porttitor eget dolor. Elit sed vulputate mi sit amet mauris commodo. Viverra adipiscing at in tellus integer
@@ -183,18 +215,8 @@
                         <svg id="forest-fire-v2"></svg>
                     </div>
                     <div class="forest-fire-v2-title">improved forest fire</div>
-                 
-                    <div id="section4" class="meat-paragraph">
-                        Congue eu consequat ac felis donec et. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Urna cursus eget
-                        nunc scelerisque viverra mauris in. Vitae proin sagittis nisl rhoncus mattis rhoncus. Enim ut sem viverra aliquet eget.
-                        Orci nulla pellentesque dignissim enim sit amet venenatis. Egestas sed sed risus pretium quam vulputate dignissim
-                        suspendisse. Eget duis at tellus at urna condimentum mattis pellentesque. Tincidunt praesent semper feugiat nibh sed
-                        pulvinar proin. Pretium viverra suspendisse potenti nullam ac tortor vitae. Adipiscing bibendum est ultricies integer
-                        quis auctor. Mattis molestie a iaculis at erat pellentesque. Aliquet nec ullamcorper sit amet risus.
 
-                    </div>
-
-                    <div id="section4" class="meat-paragraph">
+                    <div class="meat-paragraph">
                         Consectetur purus ut faucibus pulvinar. Dictum at tempor commodo ullamcorper a lacus vestibulum. Dapibus ultrices in
                         iaculis nunc sed augue lacus viverra vitae. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt
                         ornare. Odio ut sem nulla pharetra diam. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae.

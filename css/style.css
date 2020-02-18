@@ -99,14 +99,24 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     position: sticky;
     top: 43px;
     height: 100%;
-    min-width: 70px;
+    min-width: 100px;
     margin: 10px;
     margin-top: 79px;
     text-align: center;
     display: flex;
     flex-direction: column;
     margin-left: 15%;
-    margin-right: 30px;
+    margin-right: 45px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Removes the Navbar on mobile devices or smaller screens*/
+@media (max-width: 420px) 
+{
+    .navbar
+    {
+        display: none;
+    }
 }
 
 .navbar > a {
@@ -146,6 +156,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     color: rgba(0, 0, 0, 0.508);
     font-size: 20px;
     padding-left: 2px;
+    padding-bottom: 20px;
 }
 
 .content { 
@@ -161,18 +172,50 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 }
 
 .meat > .meat-paragraph:first-child {
-    padding-top: 24px;
-    padding-bottom: 30px;
+    margin-top: 24px;
+    margin-bottom: 30px;
 }
 
 .meat > .meat-paragraph:not(:first-child) {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .meat > .meat-paragraph { 
     height: fit-content;
     line-height: 22px;
+}
+
+.meat-quote-bar {
+    width: 5px;
+    height: 165px;
+    background-color:rgba(0, 0, 0, 0.295);
+    position: absolute;
+}
+
+.meat-quote {
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 25px;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.meat-quote-author { 
+    margin: 20px;
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 200;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.meat-section-title {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .meat-paragraph {
@@ -250,7 +293,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 #one-dimensional-ca { 
     position: absolute; 
-    transform: translate(5px, 40px);
+    transform: translate(5px, 16px);
     z-index: -1;
 }
 
@@ -266,7 +309,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 .one-dimensional-ca-title {
     margin-top: 10px;
-    margin-bottom: 10px;
+    /* margin-bottom: px; */
     text-align: left;
     font-size: 13px;
     z-index: 3;
@@ -275,7 +318,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 #one-dimensional-ca-random { 
     position: absolute; 
-    transform: translate(5px, 36px);
+    transform: translate(5px, 13px);
     z-index: -1;
 }
 
@@ -418,7 +461,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 .forest-fire-spacing {
     display: inline-block;
     height: 300px;
-    border: 5px solid rgb(65, 65, 65);
+    border: 3px solid rgb(65, 65, 65);
 }
 
 .forest-fire-spacing:hover {
@@ -442,7 +485,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     z-index: 9001;
     display: inline-block;
     height: 300px;
-    border: 5px solid rgb(65, 65, 65);
+    border: 3px solid rgb(65, 65, 65);
 }
 
 .forest-fire-v2-spacing:hover {
