@@ -46,6 +46,7 @@ table {
 body { 
     width: 100vw;
     margin: 0 auto;
+    /* Prevents selection of elements on page */
     -webkit-user-select: none;
 }
 
