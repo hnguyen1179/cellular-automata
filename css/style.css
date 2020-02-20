@@ -146,6 +146,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 .header {
     font-family: 'PT Sans', sans-serif;
     letter-spacing: 1px;
+    transform: translate(0px, -15px);
 }
 
 .header-title {
@@ -156,7 +157,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 .header-subtext {
     color: rgba(0, 0, 0, 0.508);
     font-size: 20px;
-    padding-left: 2px;
+    padding-left: 4px;
     padding-bottom: 20px;
 }
 
@@ -188,7 +189,6 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 }
 
 .meat-quote-box {
-    margin-top: 8px;
     height: fit-content;
     display: flex;
 }
@@ -467,7 +467,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 .forest-fire-spacing {
     display: inline-block;
     height: 300px;
-    border: 3px solid rgb(65, 65, 65);
+    /* border: 3px solid rgb(65, 65, 65); */
 }
 
 .forest-fire-spacing:hover {
@@ -491,9 +491,42 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     z-index: 9001;
     display: inline-block;
     height: 300px;
-    border: 3px solid rgb(65, 65, 65);
+    /* border: 3px solid rgb(65, 65, 65); */
 }
 
 .forest-fire-v2-spacing:hover {
     cursor: pointer;
+}
+
+.game-of-life-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 15px;
+    z-index: 3;
+    color: rgba(0, 0, 0, 0.507); 
+}
+
+#game-of-life {
+    z-index: 9001;
+}
+
+.game-of-life-spacing {
+    display: inline-block;
+    height: 500px;
+    width: 500px;
+    /* border: 3px solid rgb(65, 65, 65); */
+}
+
+.game-of-life-restart {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13px;
+    border: 1px solid black;
+    padding: 2px;
+    padding-bottom: 3px;
+    border-radius: 4px;
+    box-shadow: 1px 1px black;
 }
