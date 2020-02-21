@@ -47,6 +47,7 @@
         <script src="./lib/traffic-model-50.js" charset='utf-8'></script>
         <script src="./lib/traffic-model-75.js" charset='utf-8'></script>
         <script src="./lib/game-of-life.js" charset='utf-8'></script>
+        <script src="./lib/dla.js" charset='utf-8'></script>
         
         <link rel="stylesheet" href="./css/style.css">
     </head>
@@ -84,8 +85,8 @@
                         <div class="meat-quote-bar"></div>
                         <div class="meat-quote">
                             But even more important is the way complex systems seem to strike a balance between the need for order and
-                            the imperative to change. Complex systems tend to locate themselves at a place we call the <span
-                                style="font-style:italic">edge of chaos</span>. We imagine
+                            the imperative to change. Complex systems tend to locate themselves at a place we call the <a id="edge-of-chaos"
+                                href="https://en.wikipedia.org/wiki/Edge_of_chaos" target="_blank">edge of chaos</a>. We imagine
                             the edge of chaos as a place where there is enough innovation to keep a living system vibrant, and enough stability
                             to
                             keep it from collapsing into anarchy.
@@ -100,11 +101,11 @@
                         What is it?
                     </div>
 
-                    <div class="meat-paragraph">
+                    <p class="meat-paragraph">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                         aliqua. Mauris nunc congue nisi vitae suscipit. Aliquet porttitor lacus luctus accumsan tortor. Libero volutpat sed
                         cras ornare arcu dui vivamus.
-                    </div>
+                    </p>
 
                     <div class="meat-section-title" id="section2">
                         1-Dimensional Models
@@ -118,7 +119,7 @@
                     <div class="one-dimensional-ca-random-spacing"></div>
                     <div class="one-dimensional-ca-random-title">1-d cellular automaton, </div>
 
-                    <div class="meat-paragraph">
+                    <p class="meat-paragraph">
                         Risus ultricies tristique nulla aliquet enim. Ac tortor dignissim convallis aenean et tortor at risus viverra. Nulla
                         malesuada pellentesque elit eget gravida. Urna et pharetra pharetra massa massa ultricies. Cursus metus aliquam eleifend
                         mi in nulla posuere sollicitudin aliquam. Sit amet consectetur adipiscing elit ut aliquam purus sit. Pretium nibh ipsum
@@ -129,9 +130,9 @@
                         eget arcu dictum varius. Id nibh tortor id aliquet lectus proin nibh nisl. Vestibulum lorem sed risus ultricies
                         tristique nulla aliquet enim tortor. Id volutpat lacus laoreet non curabitur gravida arcu. Sit amet consectetur
                         adipiscing elit ut aliquam purus.
-                    </div>
+                    </p>
 
-                    <div class="meat-paragraph">
+                    <p class="meat-paragraph">
                         In cursus turpis massa tincidunt dui. Sed augue lacus viverra vitae congue eu. Viverra ipsum nunc aliquet bibendum enim.
                         Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Nisi scelerisque eu ultrices vitae. Nec
                         tincidunt praesent semper feugiat nibh sed. Lacus vestibulum sed arcu non odio euismod lacinia at. Enim praesent
@@ -140,7 +141,7 @@
                         semper viverra nam libero. Rhoncus urna neque viverra justo nec ultrices dui sapien eget. Pharetra convallis posuere
                         morbi leo urna molestie at. Facilisis mauris sit amet massa vitae. Ut sem viverra aliquet eget sit amet tellus cras
                         adipiscing.
-                    </div>
+                    </p>
 
                     <div class="meat-section-title" id="section3">
                         2-Dimensional Models
@@ -150,7 +151,7 @@
                     <div class="glider-gun-spacing"></div>
                     <div class="glider-gun-title">glider gun</div>
 
-                    <div class="meat-paragraph">
+                    <p class="meat-paragraph">
                         Nibh praesent tristique magna sit. Feugiat nibh sed pulvinar proin gravida hendrerit. Aliquet porttitor lacus luctus
                         accumsan. Nisi porta lorem mollis aliquam. Arcu non odio euismod lacinia at quis risus sed. Ullamcorper a lacus
                         vestibulum sed arcu non odio. Nibh cras pulvinar mattis nunc. Augue mauris augue neque gravida in fermentum et
@@ -158,14 +159,16 @@
                         consectetur. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices. Sed velit dignissim sodales ut eu.
                         Diam quam nulla porttitor massa id neque aliquam. Suspendisse interdum consectetur libero id. Pretium quam vulputate
                         dignissim suspendisse in est ante.
-                    </div>
+                    </p>
 
-                    <div class="broken-glider-gun-restart"></div>
+                    <div class="broken-glider-gun-restart" id="animation-restart">
+                        reset
+                    </div>
                     <svg id="broken-glider-gun"></svg>
                     <div class="broken-glider-gun-spacing"></div>
                     <div class="broken-glider-gun-title">broken glider gun</div>
 
-                    <div class="meat-paragraph">
+                    <p class="meat-paragraph">
                         Mattis molestie a iaculis at erat. At auctor urna nunc id. Semper eget duis at tellus at urna condimentum mattis
                         pellentesque. Tristique nulla aliquet enim tortor at auctor. Morbi tristique senectus et netus et. Pellentesque elit
                         ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Scelerisque eleifend donec pretium vulputate sapien
@@ -174,7 +177,15 @@
                         egestas erat imperdiet sed euismod. Ac ut consequat semper viverra nam libero justo laoreet. Egestas sed sed risus
                         pretium. In pellentesque massa placerat duis ultricies lacus. Eu nisl nunc mi ipsum faucibus vitae aliquet. Nunc sed
                         blandit libero volutpat. Scelerisque viverra mauris in aliquam.
+                    </p>
+
+                    <span class="game-of-life-restart" id="animation-restart">
+                        <span>reset</span>
+                    </span>
+                    <div class="game-of-life-spacing">
+                        <svg id="game-of-life"></svg>
                     </div>
+                    <div class="game-of-life-title">Conway's Game of Life</div>
 
                     <div class="meat-section-title" id="section4">
                         Traffic Model
@@ -190,14 +201,14 @@
                     <div class="traffic-model-75-spacing"></div>
                     <div class="traffic-model-title">0.75 Crowded </div>
 
-                    <div class="meat-paragraph">
+                    <p class="meat-paragraph">
                         Congue eu consequat ac felis donec et. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Urna cursus eget
                         nunc scelerisque viverra mauris in. Vitae proin sagittis nisl rhoncus mattis rhoncus. Enim ut sem viverra aliquet eget.
                         Orci nulla pellentesque dignissim enim sit amet venenatis. Egestas sed sed risus pretium quam vulputate dignissim
                         suspendisse. Eget duis at tellus at urna condimentum mattis pellentesque. Tincidunt praesent semper feugiat nibh sed
                         pulvinar proin. Pretium viverra suspendisse potenti nullam ac tortor vitae. Adipiscing bibendum est ultricies integer
                         quis auctor. Mattis molestie a iaculis at erat pellentesque. Aliquet nec ullamcorper sit amet risus.
-                    </div>
+                    </p>
 
                     <div class="meat-section-title" id="section5">
                         Forest Fire Model
@@ -208,7 +219,7 @@
                     </div>
                     <div class="forest-fire-title">forest fire</div>
 
-                    <div class="meat-paragraph">
+                    <p class="meat-paragraph">
                         Ornare arcu odio ut sem nulla. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Massa id neque
                         aliquam vestibulum morbi blandit cursus. Egestas dui id ornare arcu odio ut sem nulla. Nunc faucibus a pellentesque sit
                         amet porttitor eget dolor. Elit sed vulputate mi sit amet mauris commodo. Viverra adipiscing at in tellus integer
@@ -216,14 +227,14 @@
                         tincidunt lobortis feugiat. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Elit at imperdiet dui
                         accumsan sit amet nulla facilisi. Lorem donec massa sapien faucibus et molestie ac feugiat. Lorem donec massa sapien
                         faucibus et molestie ac feugiat sed.
-                    </div>
+                    </p>
 
                     <div class="forest-fire-v2-spacing">
                         <svg id="forest-fire-v2"></svg>
                     </div>
                     <div class="forest-fire-v2-title">improved forest fire</div>
 
-                    <div class="meat-paragraph">
+                    <p class="meat-paragraph">
                         Consectetur purus ut faucibus pulvinar. Dictum at tempor commodo ullamcorper a lacus vestibulum. Dapibus ultrices in
                         iaculis nunc sed augue lacus viverra vitae. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt
                         ornare. Odio ut sem nulla pharetra diam. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae.
@@ -232,15 +243,15 @@
                         Orci eu lobortis elementum nibh tellus molestie. Tempus urna et pharetra pharetra massa massa. Id consectetur purus ut
                         faucibus pulvinar elementum integer enim. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. Pulvinar etiam non
                         quam lacus suspendisse faucibus interdum posuere lorem.
-                    </div>
+                    </p>
 
-                    <div class="game-of-life-restart">
+                    <span class="dla-restart" id="animation-restart">
                         <span>reset</span>
+                    </span>
+                    <div class="dla-spacing">
+                        <svg id="dla"></svg>
                     </div>
-                    <div class="game-of-life-spacing">
-                        <svg id="game-of-life"></svg>
-                    </div>
-                    <div class="game-of-life-title">Conway's Game of Life</div>
+                    <div class="dla-title">Conway's Game of Life</div>
 
                 </main>
             </section>
