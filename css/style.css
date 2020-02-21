@@ -202,7 +202,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 .meat-quote {
     margin: 10px;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.6);
     line-height: 25px;
     font-size: 14px;
     font-family: 'PT Sans', sans-serif;
@@ -210,16 +210,13 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 #edge-of-chaos {
     font-style: italic;
-    color: rgba(56, 95, 223, 0.541);
-    padding-bottom: 1px;
+    color: rgba(0, 0, 238, 0.600);
     transition: 200ms;
-    border-bottom: 1px solid rgba(56, 95, 223, 0.384);
 }
 
 #edge-of-chaos:hover {
-    transition: 200ms;
-    color: rgba(56, 95, 223, 0.89);
-    border-bottom: 1px solid rgba(56, 95, 223, 0.774);
+    transition: 600ms;
+    color: rgb(0, 0, 238);
 }
 
 .meat-quote-author { 
