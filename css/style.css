@@ -516,7 +516,7 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 .dla-spacing {
     height: 500px;
     width: 500px;
-    background-color: rgba(0, 0, 0, 0.11);
+    background-color: rgba(0, 0, 0, 0.02);
 }
 
 #animation-restart {
