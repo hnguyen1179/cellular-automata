@@ -19,6 +19,7 @@
   "homepage": "https://github.com/hnguyen1179/cellular-automata#readme",
   "dependencies": {
     "d3": "^5.15.0",
+    "underscore": "^1.9.2",
     "webpack": "^4.41.5"
   },
   "devDependencies": {
