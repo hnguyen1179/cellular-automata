@@ -513,6 +513,12 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     cursor: pointer;
 }
 
+.dla-spacing {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.11);
+}
+
 #animation-restart {
     transform: translate(3px, 3px);
     z-index: 9100;
