@@ -47,7 +47,8 @@
         <script src="./lib/traffic-model-50.js" charset='utf-8'></script>
         <script src="./lib/traffic-model-75.js" charset='utf-8'></script>
         <script src="./lib/game-of-life.js" charset='utf-8'></script>
-        <script src="./lib/dla.js" charset='utf-8'></script>
+        <script src="./lib/dla-both.js" charset='utf-8'></script>
+        <script src="./lib/dla-aggregate.js" charset='utf-8'></script>
         
         <link rel="stylesheet" href="./css/style.css">
     </head>
@@ -251,6 +252,14 @@
                     <div class="dla-spacing">
                         <svg id="dla"></svg>
                     </div>
+
+                    <span class="dla-aggregate-restart" id="animation-restart">
+                        <span>reset</span>
+                    </span>
+                    <div class="dla-aggregate-spacing">
+                        <svg id="dla-aggregates"></svg>
+                    </div>
+
                     <div class="dla-title">Diffusion Limited Aggregation</div>
                 </main>
             </section>

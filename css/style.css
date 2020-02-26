@@ -513,7 +513,18 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     cursor: pointer;
 }
 
+#dla-walkers {
+    position: absolute;
+    transform: translate(-500px, 0px);
+}
+
 .dla-spacing {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.dla-aggregate-spacing {
     height: 500px;
     width: 500px;
     background-color: rgba(0, 0, 0, 0.02);
