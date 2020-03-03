@@ -104,8 +104,36 @@
                     </div>
 
                     <p class="meat-paragraph">
-                        To first understand what <span style="font-style:italic">cellular automata</span> is, we have to understand what exactly a complex system is.
-                        A complex system is defined as a 
+                        To first understand what <span style="font-style:italic">cellular automata</span> is, we have to understand what exactly
+                        a</br> <span style="font-style:italic"> complex system </span>is.
+                    </p>
+
+                    <p class="meat-paragraph">
+                        A complex system is defined as a system comprised of many components that interact with their local, surrounding neighbors based on a given 
+                        subset of rules. When these smaller components interact with each other on this scale, a different behavior or pattern emerges from the 
+                        system as a whole. As a result of these constant micro-interactions, complex systems can be thought as greater than the sum of its parts.  
+                    </p>
+
+                    <p class="meat-paragraph">
+                        Why might this be relevant?
+                    </p>
+
+                    <p class="meat-paragraph">
+                        Complex systems exist in all walks of life and models can be created in order to mimic these natural complex systems found in real life. 
+                        A complex system can be as small as a cell or, ultimately, as large as our universe, itself. Researchers study these complex systems and, with the
+                        help of modern technology, model them in order to get a better understanding of how they operate and make informed decisions on solutions to problems 
+                        that stem from some of these complex systems.  
+                    </p>
+
+                    <p class="meat-paragraph">
+                        Cellular automaton (abbrev. CA) is a type of model that can be used to describe specific complex systems.  
+                        These systems consists of a regular grid of cells, each in one of a finite number of states, such as on and off. 
+                        The grid can be in any finite number of dimensions. For each cell, a set of cells called its neighborhood is defined 
+                        relative to the specified cell. An initial state (time t = 0) is selected by assigning a state for each cell. 
+                        A new generation is created (advancing t by 1), according to some fixed rule
+                        that determines the new state of each cell in terms of the current state of the
+                        cell and the states of the cells in its neighborhood. Typically, the rule for updating the state of cells is the same
+                        for each cell and does not change over time, and is applied to the whole grid simultaneously.
                     </p>
 
                     <div class="meat-section-title" id="section2">
@@ -115,6 +143,25 @@
                     <svg id="one-dimensional-ca"></svg>
                     <div class="one-dimensional-ca-spacing"></div>
                     <div class="one-dimensional-ca-title">1-d cellular automaton, </div>
+
+                    <p class="meat-paragraph">
+                        CA models can be depicted up to three dimensions depending on the type of system being replicated. In the case of a 1-dimensional CA, such 
+                        as the one seen in the above figure, each row will represent a different state in time. The very first row represents the initial state 
+                        of the CA system and the subsequent rows under it will each represent one step forward in time. 
+                    </p>
+
+
+                    <p class="meat-paragraph">
+                        Congue eu consequat ac felis donec et. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Urna cursus
+                        eget
+                        nunc scelerisque viverra mauris in. Vitae proin sagittis nisl rhoncus mattis rhoncus. Enim ut sem viverra aliquet
+                        eget.
+                        Orci nulla pellentesque dignissim enim sit amet venenatis. Egestas sed sed risus pretium quam vulputate dignissim
+                        suspendisse. Eget duis at tellus at urna condimentum mattis pellentesque. Tincidunt praesent semper feugiat nibh sed
+                        pulvinar proin. Pretium viverra suspendisse potenti nullam ac tortor vitae. Adipiscing bibendum est ultricies
+                        integer
+                        quis auctor. Mattis molestie a iaculis at erat pellentesque. Aliquet nec ullamcorper sit amet risus.
+                    </p>
 
                     <svg id="one-dimensional-ca-random"></svg>
                     <div class="one-dimensional-ca-random-spacing"></div>
@@ -132,6 +179,22 @@
                         tristique nulla aliquet enim tortor. Id volutpat lacus laoreet non curabitur gravida arcu. Sit amet consectetur
                         adipiscing elit ut aliquam purus.
                     </p>
+
+                    <div class="meat-section-title" id="section4">
+                        Traffic Model
+                    </div>
+                    
+                    <svg id="traffic-model-25"></svg>
+                    <div class="traffic-model-25-spacing"></div>
+                    <div class="traffic-model-title">0.25 Crowded </div>
+
+                    <svg id="traffic-model-50"></svg>
+                    <div class="traffic-model-50-spacing"></div>
+                    <div class="traffic-model-title">0.50 Crowded </div>
+
+                    <svg id="traffic-model-75"></svg>
+                    <div class="traffic-model-75-spacing"></div>
+                    <div class="traffic-model-title">0.75 Crowded </div>
 
                     <p class="meat-paragraph">
                         In cursus turpis massa tincidunt dui. Sed augue lacus viverra vitae congue eu. Viverra ipsum nunc aliquet bibendum enim.
@@ -187,29 +250,6 @@
                         <svg id="game-of-life"></svg>
                     </div>
                     <div class="game-of-life-title">Conway's Game of Life</div>
-
-                    <div class="meat-section-title" id="section4">
-                        Traffic Model
-                    </div>
-                    
-                    <svg id="traffic-model-25"></svg>
-                    <div class="traffic-model-25-spacing"></div>
-                    <div class="traffic-model-title">0.25 Crowded </div>
-                    <svg id="traffic-model-50"></svg>
-                    <div class="traffic-model-50-spacing"></div>
-                    <div class="traffic-model-title">0.50 Crowded </div>
-                    <svg id="traffic-model-75"></svg>
-                    <div class="traffic-model-75-spacing"></div>
-                    <div class="traffic-model-title">0.75 Crowded </div>
-
-                    <p class="meat-paragraph">
-                        Congue eu consequat ac felis donec et. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Urna cursus eget
-                        nunc scelerisque viverra mauris in. Vitae proin sagittis nisl rhoncus mattis rhoncus. Enim ut sem viverra aliquet eget.
-                        Orci nulla pellentesque dignissim enim sit amet venenatis. Egestas sed sed risus pretium quam vulputate dignissim
-                        suspendisse. Eget duis at tellus at urna condimentum mattis pellentesque. Tincidunt praesent semper feugiat nibh sed
-                        pulvinar proin. Pretium viverra suspendisse potenti nullam ac tortor vitae. Adipiscing bibendum est ultricies integer
-                        quis auctor. Mattis molestie a iaculis at erat pellentesque. Aliquet nec ullamcorper sit amet risus.
-                    </p>
 
                     <div class="meat-section-title" id="section5">
                         Forest Fire Model
