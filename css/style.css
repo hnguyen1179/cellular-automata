@@ -300,7 +300,6 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     width: 111%;
     background-color: rgba(0, 0, 0, 0.02);
     /* transform: translate(-28px, 3px);  */
-    border-radius: 10px;
     z-index: 2;
 } 
 
@@ -325,7 +324,6 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
     width: 111%;
     background-color: rgba(0, 0, 0, 0.02);
     /* transform: translate(-28px, 3px);  */
-    border-radius: 10px;
     z-index: 2;
 } 
 
@@ -340,96 +338,48 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 #traffic-model-25 { 
     position: absolute; 
-    transform: translate(5px, 36px);
+    transform: translate(27px, 10px);
     z-index: -1;
 }
 
-.traffic-model-25-spacing {
-    margin-top: 20px;
-    height: 359px;
-    width: 111%;
+#traffic-model-25-bargraph, #traffic-model-75-bargraph {
     background-color: rgba(0, 0, 0, 0.02);
-    /* transform: translate(-28px, 3px);  */
-    border-radius: 10px;
-    z-index: 2;
-} 
-
-.traffic-model-25-title {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: left;
-    font-size: 13px;
-    z-index: 3;
-    color: rgba(0, 0, 0, 0.507);
-}
-
-#traffic-model-25 { 
-    position: absolute; 
-    transform: translate(5px, 36px);
-    z-index: -1;
-}
-
-.traffic-model-25-spacing {
-    margin-top: 20px;
-    height: 359px;
-    width: 111%;
-    background-color: rgba(0, 0, 0, 0.02);
-    /* transform: translate(-28px, 3px);  */
-    border-radius: 10px;
-    z-index: 2;
-} 
-
-.traffic-model-25-title {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: left;
-    font-size: 13px;
-    z-index: 3;
-    color: rgba(0, 0, 0, 0.507);
-}
-
-#traffic-model-25 { 
-    position: absolute; 
-    transform: translate(5px, 36px);
-    z-index: -1;
+    border: 1px solid lightgray;
 }
 
 #traffic-model-50 { 
     position: absolute; 
-    transform: translate(5px, 33px);
+    transform: translate(27px, 16px);
     z-index: -1;
 }
 
 #traffic-model-75 { 
     position: absolute; 
-    transform: translate(5px, 36px);
+    transform: translate(27px, 16px);
     z-index: -1;
 }
 
 .traffic-model-25-spacing {
     margin-top: 20px;
-    height: 110px;
-    width: 111%;
+    height: 160px;
+    width: 580px;
     background-color: rgba(0, 0, 0, 0.02);
-    border-radius: 10px;
     z-index: 2;
 } 
 
 .traffic-model-50-spacing {
     margin-top: 20px;
-    height: 110px;
-    width: 111%;
+    height: 160px;
+    width: 580px;
     background-color: rgba(0, 0, 0, 0.02);
-    border-radius: 10px;
     z-index: 2;
 } 
 
 .traffic-model-75-spacing {
     margin-top: 20px;
-    height: 110px;
-    width: 111%;
+    height: 160px;
+    width: 580px;
     background-color: rgba(0, 0, 0, 0.02);
-    border-radius: 10px;
     z-index: 2;
 } 
 

@@ -70,8 +70,8 @@
             <section class="navbar">
                 <a class="navbar-link" href="#section1"> What is it? </a>
                 <a class="navbar-link" href="#section2"> 1-Dimensional </a>
-                <a class="navbar-link" href="#section3"> 2-Dimensional </a>
                 <a class="navbar-link" href="#section4"> Traffic </a>
+                <a class="navbar-link" href="#section3"> 2-Dimensional </a>
                 <a class="navbar-link" href="#section5"> Forest Fires </a>
                 <a class="navbar-link" href="#section6"> Urban Growth </a>
             </section>
@@ -119,8 +119,12 @@
                     </p>
 
                     <p class="meat-paragraph">
-                        Complex systems exist in all walks of life and models can be created in order to mimic these natural complex systems found in real life. 
-                        A complex system can be as small as a cell or, ultimately, as large as our universe, itself. Researchers study these complex systems and, with the
+                        Complex systems exist in all walks of life and models can be created in order to mimic these complex systems found in real life. 
+                        A complex system can be as small as a cell or, ultimately, as large as our universe, itself. It can be as natural as the process of how snowflakes 
+                        are formed or as man-made as the field of complexity economics, which uses computational rather than mathematical analysis to explore how economic structures are formed and reformed.
+                    </br>
+                    </br>
+                        Researchers study these complex systems and, with the
                         help of modern technology, model them in order to get a better understanding of how they operate and make informed decisions on solutions to problems 
                         that stem from some of these complex systems.  
                     </p>
@@ -130,10 +134,19 @@
                         These systems consists of a regular grid of cells, each in one of a finite number of states, such as on and off. 
                         The grid can be in any finite number of dimensions. For each cell, a set of cells called its neighborhood is defined 
                         relative to the specified cell. An initial state (time t = 0) is selected by assigning a state for each cell. 
+                    </p>
+
+                    <p class="meat-paragraph">
                         A new generation is created (advancing t by 1), according to some fixed rule
                         that determines the new state of each cell in terms of the current state of the
-                        cell and the states of the cells in its neighborhood. Typically, the rule for updating the state of cells is the same
-                        for each cell and does not change over time, and is applied to the whole grid simultaneously.
+                        cell and the states of the cells in its neighborhood. These rules that govern the state of cells are typically the same
+                        for each cell and are applied to the whole grid simultaneously, although exceptions to this are dependent 
+                        on the system modeled. 
+                    </p>
+
+                    <p class="meat-paragraph">
+                        As simple as this sounds, CA has the ability to create some very complex, unpredictable patterns in 1, 2 or sometimes even
+                        3 dimensions, depending on the type of system modeled. 
                     </p>
 
                     <div class="meat-section-title" id="section2">
@@ -145,22 +158,76 @@
                     <div class="one-dimensional-ca-title">1-d cellular automaton, </div>
 
                     <p class="meat-paragraph">
-                        CA models can be depicted up to three dimensions depending on the type of system being replicated. In the case of a 1-dimensional CA, such 
-                        as the one seen in the above figure, each row will represent a different state in time. The very first row represents the initial state 
-                        of the CA system and the subsequent rows under it will each represent one step forward in time. 
+                        In the case of a 1-dimensional CA, such as the one seen in the figure above, each row will represent a different state in time. 
+                        The very first row represents the initial state of the CA system and the subsequent rows under it will each represent one step 
+                        forward in time. Each new cell that is generated in a subsequent row will be based on the cell directly
+                        above it and the above cell's two neighbors to the left and right of it.
+
+                    </br>
+                    </br>
+
+                        Clicking the figure above will generate a random, applicable CA rule. 
                     </p>
 
+                    <p class="meat-paragraph">
+                        1-D CA models are also called <span style="font-style: italic;">elementary cellular automaton</span>, as it's the most basic way
+                        to depict a CA model. In an elementary CA model, the rules that dictate how new cells are formed are based on a binary, more on this later.
+                        
+                    </br>
+                    </br>
+
+                        Previously we talked about how each cell has a finite number of "states" and that these states are mutable as time progresses.
+                        These states can be any values, string or integer, as long as these different values for each state affect how 
+                        each cell is graphically represented in the model and possibly how they interact with their neighbors. 
+                        For elementary CA models, the state of each cell or square on the board will either be "1" for <span style="font-weight: 700;">on</span> or "0", <span style="font-weight: 700;">off</span>.
+                        Black squares represent a cell being "on" or "1".
+
+                    </br>
+                    </br>
+
+                        Since any given cell in an elementary CA model will only have 2 neighbors, its left and right neighbor, there exists a total of 
+                        8 unique arrangements for how a grouping of 3 cells can be represented on the board: 111, 110, 101, 100, 011, 010, 001, 000. In base 10 form, these 
+                        binary groupings translate to 7, 6, 5, 4, 3, 2, 1, 0, respectively. 
+
+                    </br>
+                    </br>
+
+                        From there, a "rule" is applied which then generates how the next row in the sequence will look based on the input.
+                        These rules applied will take the input, the grouping, and return an output -- which, for elementary CA models, will either be a 0 or a 1 
+                        for the cell directly below the middle cell in the grouping.
+                        
+                    </br>
+                    </br>
+
+                        Below is the rule set for "Rule 90", which is the default rule displayed for the figure above and the one applied to the figure below the rule set. Again, the black squares denote a 1 and the 
+                        white squares denote a 0. The top row of each T-block corresponds to the type of 3-cell groupings, the input of the rule set, while the 
+                        bottom row of each T-block is the output for that specific grouping. Starting on the right side of the below figure, you'll see the output generated if all 3 cells in a grouping are 0's ("000").
+                        
+                    </p>
+
+                    <img src="./images/rule90.png" alt="rule90" style="width: 450px;"/>
 
                     <p class="meat-paragraph">
-                        Congue eu consequat ac felis donec et. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Urna cursus
-                        eget
-                        nunc scelerisque viverra mauris in. Vitae proin sagittis nisl rhoncus mattis rhoncus. Enim ut sem viverra aliquet
-                        eget.
-                        Orci nulla pellentesque dignissim enim sit amet venenatis. Egestas sed sed risus pretium quam vulputate dignissim
-                        suspendisse. Eget duis at tellus at urna condimentum mattis pellentesque. Tincidunt praesent semper feugiat nibh sed
-                        pulvinar proin. Pretium viverra suspendisse potenti nullam ac tortor vitae. Adipiscing bibendum est ultricies
-                        integer
-                        quis auctor. Mattis molestie a iaculis at erat pellentesque. Aliquet nec ullamcorper sit amet risus.
+                        You're probably now wondering how these "rules" are formed? Well, if you convert 01011010 (the output of this rule set) in base 10, you'll get the number 90. 
+
+                    </br>
+                    </br>
+
+                        As a result of this logic, there are a total of 256 different rule sets that are applicable to elementary CA. In other words, there are 
+                        a total of 256 different ways you could arrange this 8 character long output consisting 0's and 1's. 00000000 would correspond to Rule 0 (generates nothing, surprise!), 
+                        while 11111111 would correspond to Rule 255 (the last rule possible, as 256 in binary requires one more bit to be represented).
+
+                    </br>
+                    </br>
+
+                        The order of how each group input is fed into which output corresponds to the positional value of the grouping. If you recall previously, each grouping 
+                        can be translated into a base 10 form consisting of the numbers from 0 to 7. The 0th grouping will correlate to the right-most output and the 7th grouping
+                        will correlate to the left-most output of each rule. 
+                    </p>
+
+                    <p class="meat-paragraph">
+                        Of these 256 rules, some rules develop interesting patterns only when they start off from a single cell and other rules develop patterns from randomness. 
+                        The figure below generates a random initial sequence on every click along with a random rule applied to it. 
                     </p>
 
                     <svg id="one-dimensional-ca-random"></svg>
@@ -168,16 +235,25 @@
                     <div class="one-dimensional-ca-random-title">1-d cellular automaton, </div>
 
                     <p class="meat-paragraph">
-                        Risus ultricies tristique nulla aliquet enim. Ac tortor dignissim convallis aenean et tortor at risus viverra. Nulla
-                        malesuada pellentesque elit eget gravida. Urna et pharetra pharetra massa massa ultricies. Cursus metus aliquam eleifend
-                        mi in nulla posuere sollicitudin aliquam. Sit amet consectetur adipiscing elit ut aliquam purus sit. Pretium nibh ipsum
-                        consequat nisl vel pretium lectus. Cras adipiscing enim eu turpis egestas. Parturient montes nascetur ridiculus mus
-                        mauris. In tellus integer feugiat scelerisque varius morbi enim nunc. Mauris vitae ultricies leo integer malesuada nunc.
-                        Ut etiam sit amet nisl purus in mollis nunc. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Consequat
-                        semper viverra nam libero justo laoreet sit amet. Ultrices eros in cursus turpis massa tincidunt dui ut ornare. At augue
-                        eget arcu dictum varius. Id nibh tortor id aliquet lectus proin nibh nisl. Vestibulum lorem sed risus ultricies
-                        tristique nulla aliquet enim tortor. Id volutpat lacus laoreet non curabitur gravida arcu. Sit amet consectetur
-                        adipiscing elit ut aliquam purus.
+                        What makes elementary CA so interesting is how much depth there is to something so simple. While its practical applications aren't as 
+                        realized as 2-d CA models, 1-d elementary CA has become an entire field of study within CA due to the theoretical implications in math and computer science
+                        that some rules exhibit. 
+                    </p>
+
+                    <p class="meat-paragraph">
+                        Rule 90 creates a fractal structure called a <a id="edge-of-chaos" href="https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle" target="_blank">Sierpiński triangle</a>. Given 
+                        a much higher resolution, this triangular pattern is infinitely repeated.  
+                        Other rules like Rule 110 have been proven to be <a id="edge-of-chaos" href="https://en.wikipedia.org/wiki/Turing_completeness" target="_blank">Turing complete</a>. This essentially implies that,
+                        given unlimited memory and time, any calculation or computer program can be simulated using this automaton provided that you give it the correct initial input. 
+
+                    </br>
+                    </br>
+
+                        Beyond the theory are some practical applications. Take for instance, Rule 184. Rule 184 solves what cellular automata scientists call
+                        the "Majority Problem". The Majority Problem in cellular automata is the problem of finding a 1-d CA rule that exhibits the behavior
+                        of "majority voting", wherein given a configuration of a two-state CA model with i + j cells total, i of which are in the "0" state and j
+                        of which are in the "1" state, a correct solution to the voting problem must eventually set all cells to "0" if i > j
+                        and must eventually set all cells to "1" if i < j. The desired eventual state is unspecified if i = j.
                     </p>
 
                     <div class="meat-section-title" id="section4">
@@ -187,6 +263,7 @@
                     <svg id="traffic-model-25"></svg>
                     <div class="traffic-model-25-spacing"></div>
                     <div class="traffic-model-title">0.25 Crowded </div>
+                    <svg id="traffic-model-25-bargraph"></svg>
 
                     <svg id="traffic-model-50"></svg>
                     <div class="traffic-model-50-spacing"></div>
@@ -195,6 +272,7 @@
                     <svg id="traffic-model-75"></svg>
                     <div class="traffic-model-75-spacing"></div>
                     <div class="traffic-model-title">0.75 Crowded </div>
+                    <svg id="traffic-model-75-bargraph"></svg>
 
                     <p class="meat-paragraph">
                         In cursus turpis massa tincidunt dui. Sed augue lacus viverra vitae congue eu. Viverra ipsum nunc aliquet bibendum enim.
