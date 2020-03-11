@@ -249,7 +249,7 @@
                     </br>
                     </br>
 
-                        Beyond the theory are some practical applications. Take for instance, Rule 184. Rule 184 solves what cellular automata scientists call
+                        Beyond the theory are some practical applications. Take for instance, Rule 184 or the "Traffic Rule". Rule 184 solves what cellular automata scientists call
                         the "Majority Problem". The Majority Problem in cellular automata is the problem of finding a 1-d CA rule that exhibits the behavior
                         of "majority voting", wherein given a configuration of a two-state CA model with i + j cells total, i of which are in the "0" state and j
                         of which are in the "1" state, a correct solution to the voting problem must eventually set all cells to "0" if i > j
@@ -262,11 +262,11 @@
                     
                     <svg id="traffic-model-25"></svg>
                     <div class="traffic-model-25-spacing"></div>
-                    <div class="traffic-model-title">0.25 Crowded </div>
+                    <div class="traffic-model-title">25% Density </div>
 
                     <p class="meat-paragraph">
-                        In the context of a model for traffic: the black cells, "1", found in Rule 184 
-                        represents cars on a one lane road while the white cells, "0", are empty spaces. 
+                        In the context of a model for traffic: the black cells, "1",
+                        represent cars on a one lane road while the white cells, "0", are empty spaces. 
                         
                         The cars here are driving from left to right and the next time frame is given by each consecutive row. 
                         Cars that are densely congregated will be stuck in traffic jams for a couple generations until the jam 
@@ -276,35 +276,79 @@
                     </br>
                     </br>
                         
-                        The model generated an initial row of 25% density
-                        
+                        The model generated an initial row of 25% density, meaning that cars will randomly fill 25% of the empty spaces on the initial row.
+                        From this initial preset, you can see that cars generally flow freely along the road and traffic jams clear up pretty quickly. 
+
                     </p>
-                                        
+                                       
                     <svg id="traffic-model-25-bargraph"></svg>
+
+                    <p class="meat-paragraph">
+                        The graph above will show the number of cars visible within the frame at each current generation. The count of cars are found on the 
+                        y-axis while the time generation is on the x-axis. From the figure, we can see that the count of cars is trending toward 0 as time increases. 
+                        This is an example of a solution to the majority rule as the initial traffic conditions had the majority of cell states being "0", or empty space. 
+                    </p>
 
                     <svg id="traffic-model-50"></svg>
                     <div class="traffic-model-50-spacing"></div>
-                    <div class="traffic-model-title">0.50 Crowded </div>
+                    <div class="traffic-model-title">50% Density </div>
+                    
+                    <p class="meat-paragraph">
+                        In the example above, you'll see an initial traffic density of 50%. Traffic generally clears up depending on the initial, random arrangement of cars. However, as you
+                        click through, you'll see that there are also some situations wherein you'll see that traffic hits a tipping point and gets backed up. 
+                    </p>
 
                     <svg id="traffic-model-75"></svg>
                     <div class="traffic-model-75-spacing"></div>
-                    <div class="traffic-model-title">0.75 Crowded </div>
+                    <div class="traffic-model-title">75% Density </div>
+
+                    <p class="meat-paragraph">
+                        In the situation where you'll have 75% of cars fill the initial condition at random, traffic will almost always get
+                        backed up. There are, however, rare instances where the Majority Rule will fail to pass and traffic clears up, but this isn't as 
+                        frequent as a 50% initial density model. 
+                    </p>
+
                     <svg id="traffic-model-75-bargraph"></svg>
 
                     <p class="meat-paragraph">
-                        In cursus turpis massa tincidunt dui. Sed augue lacus viverra vitae congue eu. Viverra ipsum nunc aliquet bibendum enim.
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Nisi scelerisque eu ultrices vitae. Nec
-                        tincidunt praesent semper feugiat nibh sed. Lacus vestibulum sed arcu non odio euismod lacinia at. Enim praesent
-                        elementum facilisis leo vel. Aenean euismod elementum nisi quis. Lacus laoreet non curabitur gravida. Vitae congue
-                        mauris rhoncus aenean vel elit. In mollis nunc sed id semper risus. Turpis nunc eget lorem dolor sed viverra. Consequat
-                        semper viverra nam libero. Rhoncus urna neque viverra justo nec ultrices dui sapien eget. Pharetra convallis posuere
-                        morbi leo urna molestie at. Facilisis mauris sit amet massa vitae. Ut sem viverra aliquet eget sit amet tellus cras
-                        adipiscing.
+                        In the figure above, you'll see how most graphs trend toward an increasing amount of cars being congested on the road. 
+                        
+                    </br> 
+                    </br> 
+
+                        Rule 184 is an interesting rule as it implicates that from a simple ruleset, a system is able to identify the majority state based on a non-recorded count of 
+                        the state of each of the single cell's neighbors. At no point are cells given the total count of either states, and yet, it generally closes in on the 
+                        majority. 
                     </p>
 
                     <div class="meat-section-title" id="section3">
                         2-Dimensional Models
                     </div>
+
+                    <p class="meat-paragraph">
+                        Nibh praesent tristique magna sit. Feugiat nibh sed pulvinar proin gravida hendrerit. Aliquet porttitor lacus luctus
+                        accumsan. Nisi porta lorem mollis aliquam. Arcu non odio euismod lacinia at quis risus sed. Ullamcorper a lacus
+                        vestibulum sed arcu non odio. Nibh cras pulvinar mattis nunc. Augue mauris augue neque gravida in fermentum et
+                        sollicitudin ac.
+                    </p>
+
+                    <span class="game-of-life-restart" id="animation-restart">
+                        <span>reset</span>
+                    </span>
+                    <div class="game-of-life-spacing">
+                        <svg id="game-of-life"></svg>
+                    </div>
+                    <div class="game-of-life-title">Conway's Game of Life</div>
+
+                    <p class="meat-paragraph">
+                        Nibh praesent tristique magna sit. Feugiat nibh sed pulvinar proin gravida hendrerit. Aliquet porttitor lacus luctus
+                        accumsan. Nisi porta lorem mollis aliquam. Arcu non odio euismod lacinia at quis risus sed. Ullamcorper a lacus
+                        vestibulum sed arcu non odio. Nibh cras pulvinar mattis nunc. Augue mauris augue neque gravida in fermentum et
+                        sollicitudin ac. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Eget velit aliquet sagittis id
+                        consectetur. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices. Sed velit dignissim sodales ut eu.
+                        Diam quam nulla porttitor massa id neque aliquam. Suspendisse interdum consectetur libero id. Pretium quam vulputate
+                        dignissim suspendisse in est ante.
+                    </p>
 
                     <svg id="glider-gun"></svg>
                     <div class="glider-gun-spacing"></div>
@@ -337,14 +381,6 @@
                         pretium. In pellentesque massa placerat duis ultricies lacus. Eu nisl nunc mi ipsum faucibus vitae aliquet. Nunc sed
                         blandit libero volutpat. Scelerisque viverra mauris in aliquam.
                     </p>
-
-                    <span class="game-of-life-restart" id="animation-restart">
-                        <span>reset</span>
-                    </span>
-                    <div class="game-of-life-spacing">
-                        <svg id="game-of-life"></svg>
-                    </div>
-                    <div class="game-of-life-title">Conway's Game of Life</div>
 
                     <div class="meat-section-title" id="section5">
                         Forest Fire Model

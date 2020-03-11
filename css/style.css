@@ -349,13 +349,13 @@ a { color: rgba(0, 0, 0, 0.466); text-decoration: none; }
 
 #traffic-model-50 { 
     position: absolute; 
-    transform: translate(27px, 16px);
+    transform: translate(27px, 5px);
     z-index: -1;
 }
 
 #traffic-model-75 { 
     position: absolute; 
-    transform: translate(27px, 16px);
+    transform: translate(27px, 5px);
     z-index: -1;
 }
 
