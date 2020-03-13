@@ -84,7 +84,7 @@
 
                 <main class="meat">
                     <div class="meat-quote-box">
-                        <div class="meat-quote-bar"></div>
+                        <area shape="rect" class="meat-quote-bar"></area>
                         <div class="meat-quote">
                             But even more important is the way complex systems seem to strike a balance between the need for order and
                             the imperative to change. Complex systems tend to locate themselves at a place we call the <a id="edge-of-chaos"
@@ -96,7 +96,6 @@
                                 Michael Crichton, <span style="font-style:italic">The Lost World</span>
                             </div>
                         </div>
-  
                     </div>
 
                     <div class="meat-section-title" id="section1">
@@ -158,8 +157,8 @@
                     <div class="one-dimensional-ca-title">1-d cellular automaton, </div>
 
                     <p class="meat-paragraph">
-                        In the case of a 1-d CA, such as the one seen in the figure above, each row will represent a different state in time. 
-                        The very first row represents the initial state of the CA system and the subsequent rows under it will each represent one step 
+                        In the case of a 1-d CA, such as the one seen in the figure above, each row will can be seen as a different state in time. 
+                        The very first row is the initial state of the CA system and the subsequent rows under it will each be seen as one step 
                         forward in time. Each new cell that is generated in a subsequent row will be based on the cell directly
                         above it and the above cell's two neighbors to the left and right of it.
 
@@ -178,7 +177,7 @@
 
                         Previously we talked about how each cell has a finite number of "states" and that these states are mutable as time progresses.
                         These states can be any values, string or integer, as long as these different values for each state affect how 
-                        each cell is graphically represented in the model and possibly how they interact with their neighbors. 
+                        each cell is graphically presented in the model and possibly how they interact with their neighbors. 
                         For elementary CA models, the state of each cell or square on the board will either be "1" for <span style="font-weight: 700;">on</span> or "0", <span style="font-weight: 700;">off</span>.
                         Black squares represent a cell being "on" or "1".
 
@@ -186,7 +185,7 @@
                     </br>
 
                         Since any given cell in an elementary CA model will only have 2 neighbors, its left and right neighbor, there exists a total of 
-                        8 unique arrangements for how a grouping of 3 cells can be represented on the board: 111, 110, 101, 100, 011, 010, 001, 000. In base 10 form, these 
+                        8 unique configurations for how a grouping of 3 cells can be arranged on the board: 111, 110, 101, 100, 011, 010, 001, 000. In base 10 form, these 
                         binary groupings translate to 7, 6, 5, 4, 3, 2, 1, 0, respectively. 
 
                     </br>
@@ -215,7 +214,7 @@
 
                         As a result of this logic, there are a total of 256 different rule sets that are applicable to elementary CA. In other words, there are 
                         a total of 256 different ways you could arrange this 8 character long output consisting 0's and 1's. 00000000 would correspond to Rule 0 (generates nothing, surprise!), 
-                        while 11111111 would correspond to Rule 255 (the last rule possible, as 256 in binary requires one more bit to be represented).
+                        while 11111111 would correspond to Rule 255 (the last rule possible, as 256 in binary requires one more bit).
 
                     </br>
                     </br>
@@ -303,7 +302,7 @@
                     <div class="traffic-model-title">75% density </div>
 
                     <p class="meat-paragraph">
-                        In the situation where you'll have 75% of cars fill the initial condition at random, traffic will almost always get
+                        In the situation where cars account for 75% of the initial cell states at random, traffic will almost always get
                         backed up. There are, however, rare instances where the Majority Problem will fail to pass and traffic clears up, but this isn't as 
                         frequent as a 50% initial density model. 
                     </p>
@@ -326,8 +325,8 @@
                     </div>
 
                     <p class="meat-paragraph">
-                        2-d CA is a more practical application of CA as many more real world models can be represented within a 2-d landscape than 1-d. However, before we get to those 
-                        applications, it's important to understand the theory. 
+                        2-d CA is a more practical application of CA as many more real world systems can be modeled using a 2-d landscape than 1-d. However, before we get to those 
+                        applications, it's important to understand the theory and basic structure of 2-d CA. 
                     </p>
 
                     <span class="game-of-life-restart" id="animation-restart">
@@ -339,27 +338,84 @@
                     <div class="game-of-life-title">Conway's Game of Life</div>
 
                     <p class="meat-paragraph">
-                        Nibh praesent tristique magna sit. Feugiat nibh sed pulvinar proin gravida hendrerit. Aliquet porttitor lacus luctus
-                        accumsan. Nisi porta lorem mollis aliquam. Arcu non odio euismod lacinia at quis risus sed. Ullamcorper a lacus
-                        vestibulum sed arcu non odio. Nibh cras pulvinar mattis nunc. Augue mauris augue neque gravida in fermentum et
-                        sollicitudin ac. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Eget velit aliquet sagittis id
-                        consectetur. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices. Sed velit dignissim sodales ut eu.
-                        Diam quam nulla porttitor massa id neque aliquam. Suspendisse interdum consectetur libero id. Pretium quam vulputate
-                        dignissim suspendisse in est ante.
+                        If you've heard of cellular automata in any context, you probably would have heard of the <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" id="edge-of-chaos">Game of Life</a>. 
+                        The Game of Life (although not technically a game, as there is no objective or user interaction) is a classic example of a 2-d CA system developed by mathematician John Horton Conway in 1970. 
+
+                    </br>
+                    </br>
+
+                        Much like what we've seen before in 1-d CA, 2-d CA is a time dependent system. However, instead of the next time sequence being represented by each row like in a 1-d CA model,
+                        the next time sequence is just the next animation frame in the 2-d matrix of cells. 
+
+                    </br>
+                    </br>
+
+                        The "neighbors" of each cell are also now going to be the 8 cells directly touching any cell. This configuration of potential neighbors for each cell is specific to 
+                        the system being modeled, and the 8-neighbor configuration is called a <a href="https://en.wikipedia.org/wiki/Moore_neighborhood" id="edge-of-chaos">Moore neighborbood</a>.
+                        
+                    </br>
+                    </br>
+
+                        Whether a new cell is created or destroyed in the next frame is dependent on the number of neighbors surrounding a cell. 
+                        There are four rules that dictate how cells are generated or destroyed: 
+                            <li> Any live cell with fewer than 2 live neighbours dies, as if by underpopulation </li>
+                            <li> Any live cell with 2 or 3 live neighbours lives on to the next generation </li>
+                            <li> Any live cell with more than 3 live neighbours dies, as if by overpopulation </li>
+                            <li> Any dead cell with exactly 3 live neighbours becomes a live cell, as if by reproduction </li>
                     </p>
 
+                    <p class="meat-paragraph">
+                        In the case of cells that are situated on the edge of the matrix, its neighbors off-grid are, instead, going to be cells
+                        directly on its opposite edge. This endless, but finite, space is called a periodic boundary condition. The application of a 
+                        periodic boundary conditional is situational and dependent on the model. 
+                    </p>
+
+                    <p class="meat-paragraph">
+                        The Game of Life might seem a little bit hectic given its random initial condition, but given enough generations the system 
+                        will level itself out and the once active cells will either form either static or oscillating shapes. 
+                    </p>
+
+                    <div class="meat-quote-box-short">
+                        <area shape="rect" class="meat-quote-bar"></area>
+                        <div class="meat-quote">
+                            [Complex systems are in] a zone of conflict and upheaval, where the old and the new are constantly at war.
+                            Finding the balance point must
+                            be a delicate matter—if a living system drifts too close, it risks falling over into incoherence and
+                            dissolution; but if
+                            the system moves too far away from the edge, it becomes rigid, frozen, totalitarian. Both conditions lead to
+                            extinction.
+                            <div class="meat-quote-author">
+                                Michael Crichton, <span style="font-style:italic">The Lost World</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="meat-paragraph">
+                        The Game of Life is thought to be more of a proof of concept for the ability to model complex systems than anything else. It's an example of how simple rules
+                        can create lasting effects that ripple through a system to affect other sub-components through a sequence of local interactions.
+                        Through these many interactions, interesting shapes and patterns develop.  
+                    </p>
+
+                    <div class="glider-gun-restart" id="animation-restart">
+                        reset
+                    </div>
                     <svg id="glider-gun"></svg>
                     <div class="glider-gun-spacing"></div>
                     <div class="glider-gun-title">glider gun</div>
 
                     <p class="meat-paragraph">
-                        Nibh praesent tristique magna sit. Feugiat nibh sed pulvinar proin gravida hendrerit. Aliquet porttitor lacus luctus
-                        accumsan. Nisi porta lorem mollis aliquam. Arcu non odio euismod lacinia at quis risus sed. Ullamcorper a lacus
-                        vestibulum sed arcu non odio. Nibh cras pulvinar mattis nunc. Augue mauris augue neque gravida in fermentum et
-                        sollicitudin ac. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Eget velit aliquet sagittis id
-                        consectetur. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices. Sed velit dignissim sodales ut eu.
-                        Diam quam nulla porttitor massa id neque aliquam. Suspendisse interdum consectetur libero id. Pretium quam vulputate
-                        dignissim suspendisse in est ante.
+                        An example of one of these interesting patterns specific to a Game of Life based CA is the glider, which is a 5-cell shape that holds its form as it travels in one direction. 
+                        From the Game of Life figure, you might have seen a glider or two if you were lucky enough for the right initial conditions. 
+
+                    </br>
+                    </br>
+
+                        The actual glider gun configuration above was developed by Bill Gosper in 1970. This exact arrangement of cells produces a system which endlessly generates gliders that fly out 
+                        diagonally. 
+                    </p>
+
+                    <p class="meat-paragraph">
+                        If you were to stray from this arrangement by a couple of pixels, the result of which is evident in the figure below. The switch from absolute order to complete anarchy is a thin line.  
                     </p>
 
                     <div class="broken-glider-gun-restart" id="animation-restart">
@@ -370,19 +426,36 @@
                     <div class="broken-glider-gun-title">broken glider gun</div>
 
                     <p class="meat-paragraph">
-                        Mattis molestie a iaculis at erat. At auctor urna nunc id. Semper eget duis at tellus at urna condimentum mattis
-                        pellentesque. Tristique nulla aliquet enim tortor at auctor. Morbi tristique senectus et netus et. Pellentesque elit
-                        ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Scelerisque eleifend donec pretium vulputate sapien
-                        nec sagittis aliquam malesuada. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Iaculis nunc sed
-                        augue lacus viverra vitae congue eu. In nulla posuere sollicitudin aliquam ultrices sagittis. Amet est placerat in
-                        egestas erat imperdiet sed euismod. Ac ut consequat semper viverra nam libero justo laoreet. Egestas sed sed risus
-                        pretium. In pellentesque massa placerat duis ultricies lacus. Eu nisl nunc mi ipsum faucibus vitae aliquet. Nunc sed
-                        blandit libero volutpat. Scelerisque viverra mauris in aliquam.
+                        However, if we were to walk this thin line, some wonderful can come out of it. 
                     </p>
 
                     <div class="meat-section-title" id="section5">
                         Forest Fire Model
                     </div>
+
+                    <div class="meat-quote-box-short">
+                        <area shape="rect" class="meat-quote-bar-short"></area>
+                        <div class="meat-quote">
+                        Too much change is as destructive as too little. Only at the edge of chaos can complex systems flourish.
+                        And, by implication, extinction is the inevitable result of one or the other strategy—too much change, or too little.
+                            <div class="meat-quote-author">
+                                Michael Crichton, <span style="font-style:italic">The Lost World</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="meat-paragraph">
+                        The management of forest fires have been getting more and more expensive every year. This increase in cost is indicative of the
+                        increase in destructive magnitude of forest fires over the decades. <a style="color: blue" href="https://www.nifc.gov/fireInfo/fireInfo_documents/SuppCosts.pdf">Data</a> extrapolated from the The National Interagency Fire Center has 
+                        stated that since 1985, the cost to fight these fires have increased 13 fold in 2018. In 1985, the cost to fight fires totaled to 
+                        roughly $240 million, while 2018 saw a cost of around $3.1 billion dollars. 
+                    </p>
+
+                    <p class="meat-paragraph">
+                        To combat this, scientists have looked to CA as a basis for some of the more complex forest fire models that scientists use to study
+                        in order to understand how fire propagates. From these models, scientists are able to provide much more
+                        efficient preventative measures and solutions to mitigate the damage once these fires occur.
+                    </p>
 
                     <div class="forest-fire-spacing">
                         <svg id="forest-fire"></svg>
@@ -390,19 +463,47 @@
                     <div class="forest-fire-title">forest fire</div>
 
                     <p class="meat-paragraph">
-                        Ornare arcu odio ut sem nulla. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Massa id neque
-                        aliquam vestibulum morbi blandit cursus. Egestas dui id ornare arcu odio ut sem nulla. Nunc faucibus a pellentesque sit
-                        amet porttitor eget dolor. Elit sed vulputate mi sit amet mauris commodo. Viverra adipiscing at in tellus integer
-                        feugiat scelerisque varius. Sed faucibus turpis in eu mi. Aliquet nibh praesent tristique magna sit amet. Dignissim cras
-                        tincidunt lobortis feugiat. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Elit at imperdiet dui
-                        accumsan sit amet nulla facilisi. Lorem donec massa sapien faucibus et molestie ac feugiat. Lorem donec massa sapien
-                        faucibus et molestie ac feugiat sed.
+                        Clicking on the figure will start the fire model, and after all the fires have gone out, clicking on the figure again will restart the model.
+                        
+                    </br>
+                    </br>
+
+                        While rudimentary compared to the level of models that scientists use, the figure above gives us a general idea of how these 
+                        forest fires spread. The model above features a 2-d CA framework that utilizes 4 different possible states for each cell in the matrix. 
+
+                        <li> Green cells represent the state of a burnable, organic matter; i.e. trees </li>
+                        <li> Dark grey cells represent the state of incombustible, inorganic matter; i.e. rocks  </li>
+                        <li> Red cells represent the state of an active fire </li>
+                        <li> Black cells represent the state of incombustible, burnt organic matter; i.e. charcoal </li>
+                    </p>
+
+                    <p class="meat-paragraph">
+                        Once started, any trees in direct contact with a fire has a 
+                        12.5% chance of catching on fire per fire surrounding it. And so, any additional fires surrounding a tree will 
+                        boost this probability of ignition by another 12.5%. 
+
+                    </br>
+                    </br>
+                        
+                        From these probabilities, A tree surrounded by 8 fires thus have a 100% chance of igniting, and 
+                        at least two fire cells will propagate after the first jump in time. 
+
+                    </br>
+                    </br>
+
+                        In addition to this, any active cell will turn into charcoal after 2 generations. These charcoal cells 
+                        cannot be burned again and will remain burnt until the animation is restarted. 
                     </p>
 
                     <div class="forest-fire-v2-spacing">
                         <svg id="forest-fire-v2"></svg>
                     </div>
-                    <div class="forest-fire-v2-title">improved forest fire</div>
+                    <div class="forest-fire-v2-title">forest fire with footprint</div>
+
+                    <p class="meat-paragraph">
+                        This figure above has the same logic as the forest fire model, but the charcoal cells now have the color of 
+                        their fill be dependent on time generations, with dark blue being the last wave of tree cells burnt.   
+                    </p>
 
                     <div class="meat-section-title" id="section6">
                         Urban Growth
