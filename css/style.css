@@ -500,6 +500,12 @@ li {
     background-color: rgba(0, 0, 0, 0.02);
 }
 
+.dla-aggregate-middle-spacing {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
 #animation-restart {
     transform: translate(3px, 3px);
     z-index: 9100;

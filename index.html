@@ -49,6 +49,7 @@
         <script src="./lib/game-of-life.js" charset='utf-8'></script>
         <script src="./lib/dla-both.js" charset='utf-8'></script>
         <script src="./lib/dla-aggregate.js" charset='utf-8'></script>
+        <script src="./lib/dla-aggregate-middle.js" charset='utf-8'></script>
         
         <link rel="stylesheet" href="./css/style.css">
     </head>
@@ -506,8 +507,25 @@
                     </p>
 
                     <div class="meat-section-title" id="section6">
-                        Urban Growth
+                        Urban Growth Model
                     </div>
+
+
+                    <p class="meat-paragraph">
+                        Another interesting application of a 2-d CA based logic lies in the modeling of urban sprawl. More specifically, the 
+                        the process of rural-to-urban growth. In this model, two states are present:
+                        a walker state in grey and an aggregate state in red. These walkers
+                        are used to simulate the movement of people across a geography and have an equal chance of walking in any four directions
+                        around them: up, down, left or right. 
+                        
+                    </br>
+                    </br>
+                    
+                        When these walkers neighbor an aggregate they transition state 
+                        and become stuck to the aggregate. This transition from walker to aggregate represents the act of a person settling down 
+                        permanently at a location and assimilating into urban society. 
+
+                    </p>
 
                     <span class="dla-restart" id="animation-restart">
                         <span>reset</span>
@@ -515,19 +533,23 @@
                     <div class="dla-spacing">
                         <svg id="dla"></svg>
                     </div>
+                    <div class="forest-fire-v2-title">urban sprawl</div>
+
 
                     <p class="meat-paragraph">
-                        Consectetur purus ut faucibus pulvinar. Dictum at tempor commodo ullamcorper a lacus vestibulum. Dapibus ultrices in
-                        iaculis nunc sed augue lacus viverra vitae. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi
-                        tincidunt
-                        ornare. Odio ut sem nulla pharetra diam. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae.
-                        Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Ut morbi tincidunt augue interdum velit
-                        euismod. Dignissim suspendisse in est ante in nibh. Scelerisque varius morbi enim nunc faucibus a pellentesque sit
-                        amet.
-                        Orci eu lobortis elementum nibh tellus molestie. Tempus urna et pharetra pharetra massa massa. Id consectetur purus
-                        ut
-                        faucibus pulvinar elementum integer enim. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. Pulvinar etiam non
-                        quam lacus suspendisse faucibus interdum posuere lorem.
+                        Given enough time generations, tree-like structures begin to form from walkers randomly running into these aggregates. 
+                        Scientists study the formation of these tree-like structures called Brownian trees.
+                    </p>
+
+                    <p class="meat-paragraph">
+                        Brownian trees are the perfect example of how innovation thrives on the edge of chaos. The formation of these trees are rooted in 
+                        both chaos and order. Random walkers provide the entropy into a system that is balanced out by the order found in the creation of an 
+                        aggregate.
+                    </p>
+
+                    <p class="meat-paragraph">
+                        The formation of these trees are also found in complex systems found in nature, such as
+                        the aggregation of oil embedded into sand by way of water pressure, formation of catalysts, and snowflakes.
                     </p>
 
                     <span class="dla-aggregate-restart" id="animation-restart">
@@ -536,8 +558,11 @@
                     <div class="dla-aggregate-spacing">
                         <svg id="dla-aggregates"></svg>
                     </div>
+                    <div class="forest-fire-v2-title">urban sprawl with invisible walkers</div>
 
-                    <div class="dla-title">Diffusion Limited Aggregation</div>
+                    <p class="meat-paragraph">
+                        Above is a sped up version with invisible random walkers. 
+                    </p>
                 </main>
             </section>
         </div>
