@@ -49,8 +49,7 @@
         <script src="./lib/game-of-life.js" charset='utf-8'></script>
         <script src="./lib/dla-both.js" charset='utf-8'></script>
         <script src="./lib/dla-aggregate.js" charset='utf-8'></script>
-        <script src="./lib/dla-aggregate-middle.js" charset='utf-8'></script>
-        
+
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
@@ -75,6 +74,7 @@
                 <a class="navbar-link" href="#section3"> 2-Dimensional </a>
                 <a class="navbar-link" href="#section5"> Forest Fires </a>
                 <a class="navbar-link" href="#section6"> Urban Growth </a>
+                <a class="navbar-link" href="#section7"> TLDR </a>
             </section>
 
             <section class="right">
@@ -120,33 +120,30 @@
 
                     <p class="meat-paragraph">
                         Complex systems exist in all walks of life and models can be created in order to mimic these complex systems found in real life. 
-                        A complex system can be as small as a cell or, ultimately, as large as our universe, itself. It can be as natural as the process of how snowflakes 
-                        are formed or as man-made as the field of complexity economics, which uses computational rather than mathematical analysis to explore how economic structures are formed and reformed.
+                        A complex system can be as small as a cell or as large as our universe. It can be as natural as the process of how snowflakes 
+                        are formed or as man-made as the field of complexity economics. 
                     </br>
                     </br>
                         Researchers study these complex systems and, with the
-                        help of modern technology, model them in order to get a better understanding of how they operate and make informed decisions on solutions to problems 
-                        that stem from some of these complex systems.  
+                        help of modern technology, model them in order to get a better understanding of how they operate in order to make better decisions on problems
+                        stemming from these complex systems. 
                     </p>
 
                     <p class="meat-paragraph">
                         Cellular automaton (abbrev. CA) is a type of model that can be used to describe specific complex systems.  
-                        These systems consists of a regular grid of cells, each in one of a finite number of states, such as on and off. 
-                        The grid can be in any finite number of dimensions. For each cell, a set of cells called its neighborhood is defined 
+                        These systems consists of a regular grid of cells, each in one of a finite number of states, such as "on" and "off". 
+                        This grid can be in any finite number of dimensions, but is usually either 1-d or 2-d. A set of cells, called a neighborhood, is defined 
                         relative to the specified cell. An initial state (time t = 0) is selected by assigning a state for each cell. 
                     </p>
 
                     <p class="meat-paragraph">
-                        A new generation is created (advancing t by 1), according to some fixed rule
-                        that determines the new state of each cell in terms of the current state of the
-                        cell and the states of the cells in its neighborhood. These rules that govern the state of cells are typically the same
-                        for each cell and are applied to the whole grid simultaneously, although exceptions to this are dependent 
-                        on the system modeled. 
+                        A new generation is created (advancing t by 1) according to some fixed rule,
+                        which defines the new state of each cell relative to its current state and that of cells in its neighborhood. These rules that govern cell states are typically the same
+                        for each cell and applied to the whole grid simultaneously.
                     </p>
 
                     <p class="meat-paragraph">
-                        As simple as this sounds, CA has the ability to create some very complex, unpredictable patterns in 1, 2 or sometimes even
-                        3 dimensions, depending on the type of system modeled. 
+                        As simple as this sounds, CA has the ability to create some very complex, unpredictable patterns.
                     </p>
 
                     <div class="meat-section-title" id="section2">
@@ -158,7 +155,7 @@
                     <div class="one-dimensional-ca-title">1-d cellular automaton, </div>
 
                     <p class="meat-paragraph">
-                        In the case of a 1-d CA, such as the one seen in the figure above, each row will can be seen as a different state in time. 
+                        In the case of a 1-d CA, such as the one seen in the figure above, each row can be seen as a different state in time. 
                         The very first row is the initial state of the CA system and the subsequent rows under it will each be seen as one step 
                         forward in time. Each new cell that is generated in a subsequent row will be based on the cell directly
                         above it and the above cell's two neighbors to the left and right of it.
@@ -166,18 +163,18 @@
                     </br>
                     </br>
 
-                        Clicking the figure above will generate a random, applicable CA rule. 
-                    </p>
+                        Clicking the figure above will generate a random CA rule. 
+                    <
 
                     <p class="meat-paragraph">
-                        1-imensional CA models are also called <span style="font-style: italic;">elementary cellular automaton</span>, as it's the most basic way
-                        to depict a CA model. In an elementary CA model, the rules that dictate how new cells are formed are based on a binary, more on this later.
+                        1-dimensional CA models are also called <span style="font-style: italic;">elementary cellular automaton</span>, as it's the most basic way
+                        to depict a CA model. In an elementary CA model, the rules that dictate how new cells are formed are based on a binary structure, more on this later.
                         
                     </br>
                     </br>
 
                         Previously we talked about how each cell has a finite number of "states" and that these states are mutable as time progresses.
-                        These states can be any values, string or integer, as long as these different values for each state affect how 
+                        These states can be any values, string or integer, as long as these different values affect how 
                         each cell is graphically presented in the model and possibly how they interact with their neighbors. 
                         For elementary CA models, the state of each cell or square on the board will either be "1" for <span style="font-weight: 700;">on</span> or "0", <span style="font-weight: 700;">off</span>.
                         Black squares represent a cell being "on" or "1".
@@ -208,13 +205,13 @@
                     <img src="./images/rule90.png" alt="rule90" style="width: 450px;"/>
 
                     <p class="meat-paragraph">
-                        You're probably now wondering how these "rules" are formed? Well, if you convert 01011010 (the output of this rule set) in base 10, you'll get the number 90. 
+                        You're probably wondering how these "rules" are formed. Well, if you convert 01011010 (the output of this rule set) in base 10, you'll get the number 90. 
 
                     </br>
                     </br>
 
                         As a result of this logic, there are a total of 256 different rule sets that are applicable to elementary CA. In other words, there are 
-                        a total of 256 different ways you could arrange this 8 character long output consisting 0's and 1's. 00000000 would correspond to Rule 0 (generates nothing, surprise!), 
+                        a total of 256 different ways you could arrange this 8 character long output consisting of 0's and 1's. 00000000 would correspond to Rule 0 (generates nothing, surprise!), 
                         while 11111111 would correspond to Rule 255 (the last rule possible, as 256 in binary requires one more bit).
 
                     </br>
@@ -249,8 +246,8 @@
                     </br>
                     </br>
 
-                        Beyond the theory are some practical applications. Take for instance, Rule 184 or the "Traffic Rule". Rule 184 solves what cellular automata scientists call
-                        the "Majority Problem". The Majority Problem in cellular automata is the problem of finding a 1-d CA rule that exhibits the behavior
+                        Beyond the theory are some practical applications. Take for instance, Rule 184 or the "Traffic Rule". Rule 184 solves what CA scientists call
+                        the "Majority Problem". The Majority Problem in CA is the problem of finding a 1-d CA rule that exhibits the behavior
                         of "majority voting", wherein given a configuration of a two-state CA model with i + j cells total, i of which are in the "0" state and j
                         of which are in the "1" state, a correct solution to the voting problem must eventually set all cells to "0" if i > j
                         and must eventually set all cells to "1" if i < j. The desired eventual state is unspecified if i = j.
@@ -276,8 +273,8 @@
                     </br>
                     </br>
                         
-                        The model generated an initial row of 25% density, meaning that cars will randomly fill 25% of the empty spaces on the initial row.
-                        From this initial preset, you can see that cars generally flow freely along the road and traffic jams clear up pretty quickly. 
+                        The model above generates an initial row of 25% density, meaning that cars will randomly fill 25% of the empty spaces on the initial row.
+                        From this initial preset, you can see that cars generally flow along the road and traffic jams clear up pretty quickly. 
 
                     </p>
                                        
@@ -295,7 +292,7 @@
                     
                     <p class="meat-paragraph">
                         In the example above, you'll see an initial traffic density of 50%. Traffic generally clears up depending on the initial, random arrangement of cars. However, as you
-                        click through, you'll see that there are also some situations wherein you'll see that traffic hits a tipping point and gets backed up. 
+                        click through, you'll see that there are also some situations wherein traffic hits a tipping point and gets backed up. 
                     </p>
 
                     <svg id="traffic-model-75"></svg>
@@ -317,7 +314,7 @@
                     </br> 
 
                         Rule 184 is an interesting rule as it implicates that from a simple ruleset, a system is able to identify the majority state based on a non-recorded count of 
-                        the state of each of the single cell's neighbors. At no point are cells given the total count of either states, and yet, it generally closes in on the 
+                        the state of each cell's neighbor. At no point are cells given the total count of either states, and yet, it generally closes in on the 
                         majority. 
                     </p>
 
@@ -368,12 +365,12 @@
                     <p class="meat-paragraph">
                         In the case of cells that are situated on the edge of the matrix, its neighbors off-grid are, instead, going to be cells
                         directly on its opposite edge. This endless, but finite, space is called a periodic boundary condition. The application of a 
-                        periodic boundary conditional is situational and dependent on the model. 
+                        periodic boundary condition is situational and dependent on the model. 
                     </p>
 
                     <p class="meat-paragraph">
-                        The Game of Life might seem a little bit hectic given its random initial condition, but given enough generations the system 
-                        will level itself out and the once active cells will either form either static or oscillating shapes. 
+                        The Game of Life might seem a bit hectic given its random initial condition, but given enough generations the system 
+                        will reach an equilibrium and the once active cells will either form static or oscillating shapes. 
                     </p>
 
                     <div class="meat-quote-box-short">
@@ -416,7 +413,7 @@
                     </p>
 
                     <p class="meat-paragraph">
-                        If you were to stray from this arrangement by a couple of pixels, the result of which is evident in the figure below. The switch from absolute order to complete anarchy is a thin line.  
+                        If you were to stray from this arrangement by a couple of pixels, the result is evident in the figure below. The switch from absolute order to complete anarchy is a thin line.  
                     </p>
 
                     <div class="broken-glider-gun-restart" id="animation-restart">
@@ -427,7 +424,7 @@
                     <div class="broken-glider-gun-title">broken glider gun</div>
 
                     <p class="meat-paragraph">
-                        However, if we were to walk this thin line, some wonderful can come out of it. 
+                        However, if we were to walk this thin line, something wonderful can come out of it. 
                     </p>
 
                     <div class="meat-section-title" id="section5">
@@ -448,13 +445,13 @@
                     <p class="meat-paragraph">
                         The management of forest fires have been getting more and more expensive every year. This increase in cost is indicative of the
                         increase in destructive magnitude of forest fires over the decades. <a style="color: blue" href="https://www.nifc.gov/fireInfo/fireInfo_documents/SuppCosts.pdf">Data</a> extrapolated from the The National Interagency Fire Center has 
-                        stated that since 1985, the cost to fight these fires have increased 13 fold in 2018. In 1985, the cost to fight fires totaled to 
+                        stated that since 1985, the cost to fight these fires have increased 13 fold in 2018. In 1985, the cost to fight fires totaled 
                         roughly $240 million, while 2018 saw a cost of around $3.1 billion dollars. 
                     </p>
 
                     <p class="meat-paragraph">
-                        To combat this, scientists have looked to CA as a basis for some of the more complex forest fire models that scientists use to study
-                        in order to understand how fire propagates. From these models, scientists are able to provide much more
+                        To combat this, scientists have looked to CA as a basis for some of the more complex forest fire models that scientists use to understand how fire propagates. 
+                        From these models, scientists are able to provide much more
                         efficient preventative measures and solutions to mitigate the damage once these fires occur.
                     </p>
 
@@ -503,7 +500,7 @@
 
                     <p class="meat-paragraph">
                         This figure above has the same logic as the forest fire model, but the charcoal cells now have the color of 
-                        their fill be dependent on time generations, with dark blue being the last wave of tree cells burnt.   
+                        their fill dependent on time generations, with dark blue being the last wave of tree cells burnt.   
                     </p>
 
                     <div class="meat-section-title" id="section6">
@@ -542,13 +539,13 @@
                     </p>
 
                     <p class="meat-paragraph">
-                        Brownian trees are the perfect example of how innovation thrives on the edge of chaos. The formation of these trees are rooted in 
-                        both chaos and order. Random walkers provide the entropy into a system that is balanced out by the order found in the creation of an 
-                        aggregate.
+                        Brownian trees are the perfect example of the results found when a complex system successfully thrives on the edge of chaos. 
+                        The creation of these trees are rooted in both chaos and order. 
+                        Random walkers provide the entropy to a system that is balanced by the order of rules required to form an aggregate.
                     </p>
 
                     <p class="meat-paragraph">
-                        The formation of these trees are also found in complex systems found in nature, such as
+                        The presence of these Brownian trees are also found in complex systems found in nature, such as
                         the aggregation of oil embedded into sand by way of water pressure, formation of catalysts, and snowflakes.
                     </p>
 
@@ -562,6 +559,14 @@
 
                     <p class="meat-paragraph">
                         Above is a sped up version with invisible random walkers. 
+                    </p>
+
+                    <div class="meat-section-title" id="section7">
+                        TLDR, too long didn't read
+                    </div>
+
+                    <p class="meat-paragraph">
+                        CA systems exist everywhere in life and 
                     </p>
                 </main>
             </section>
