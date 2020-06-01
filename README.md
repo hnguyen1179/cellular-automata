@@ -1,5 +1,6 @@
 # Cellular Automata
-A study on complex systems 
+A study on complex systems </br>
+  ![](images/glider-gun-gif.gif)
 
 ## What is it? 
 This is a visual journal detailing the process of cellular automata (CA) within the context of complex systems. In addition to understanding CA, applications of CA within real world examples are also simulated. Systems simulated include:
@@ -11,14 +12,18 @@ This is a visual journal detailing the process of cellular automata (CA) within 
  Below, I detail the code involved in each simulation
  
  * ### Basic Cellular Automata 
-    Blah blah blah 
- 
+    ![](images/game-of-life-gif.gif)
+    ![](images/game-of-life-code.png)
+    
  * ### Traffic 
-    Blah blah blah 
- 
+    ![](images/traffic-gif.gif)
+    ![](images/traffic-code.png)
+    
  * ### Wildfire
-    Blah blah blah 
+    ![](images/forest-fire-gif.gif)
+    ![](images/forest-fire-code.png)
  
  * ### Urban Sprawl 
-    Blah blah blah 
+    ![](images/urban-sprawl-gif.gif)
+    ![](images/urban-sprawl-code.png)
  
