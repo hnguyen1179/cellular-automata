@@ -25,13 +25,15 @@ This project was done entirely with vanilla JavaScript, HTML5, CSS3, and the d3.
 
 ## Highlights
 * **Traffic Model**
-<img src="https://user-images.githubusercontent.com/19617238/107097107-10045300-67c1-11eb-86ab-0ee38bfb9b2a.gif" align="left"  width="650" />
-<img src="https://user-images.githubusercontent.com/19617238/107097099-0aa70880-67c1-11eb-89fc-d9ceca1ca6e4.gif" align="left"  width="650" />
-<img src="https://user-images.githubusercontent.com/19617238/107097105-0ed32600-67c1-11eb-9bae-9e670fced9e0.gif" align="left"  width="650" />
+<img src="https://user-images.githubusercontent.com/19617238/107097107-10045300-67c1-11eb-86ab-0ee38bfb9b2a.gif" width="650" />
+<img src="https://user-images.githubusercontent.com/19617238/107097099-0aa70880-67c1-11eb-89fc-d9ceca1ca6e4.gif" width="650" />
+<img src="https://user-images.githubusercontent.com/19617238/107097105-0ed32600-67c1-11eb-9bae-9e670fced9e0.gif" width="650" />
 
 * **Forest Fire Model**
+<img src="https://user-images.githubusercontent.com/19617238/107097109-11358000-67c1-11eb-9c47-e1b54f32c30d.gif" width="650" />
 
 
 * **Urban Growth Model**
+<img src="https://user-images.githubusercontent.com/19617238/107097104-0e3a8f80-67c1-11eb-9da0-f715b2cc071c.gif" width="650" />
 
 
