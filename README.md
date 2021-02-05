@@ -1,7 +1,12 @@
  # Cellular Automata
 [Live link](https://hnguyen1179.github.io/cellular-automata/)</br></br>
+## 1-d Model
 <img src="https://user-images.githubusercontent.com/19617238/107095939-8a7fa380-67be-11eb-8460-16109f396919.gif" width="650" />
 </br>
+
+## 2-d Model
+<img src="https://user-images.githubusercontent.com/19617238/107097980-fbc15580-67c2-11eb-8930-ea33e5fd8c9d.gif" width="650" />
+
 
 ## Table of Contents
 1. [Introduction](#introduction)
