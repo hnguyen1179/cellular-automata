@@ -1,6 +1,7 @@
  # Cellular Automata
 [Live link](https://hnguyen1179.github.io/cellular-automata/)</br></br>
-![Conway's Game of Life](https://user-images.githubusercontent.com/19617238/107095939-8a7fa380-67be-11eb-8460-16109f396919.gif)
+<img src="https://user-images.githubusercontent.com/19617238/107095939-8a7fa380-67be-11eb-8460-16109f396919.gif" width="650" />
+</br>
 
 ## Table of Contents
 1. [Introduction](#introduction)
